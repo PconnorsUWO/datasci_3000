@@ -1,0 +1,34 @@
+I have a large block of text from a data science course that needs to be reformatted for optimal LLM comprehension. Your task is to process this text according to the following requirements:
+
+1. **Preserve All Content:** Do not omit or summarize any part of the original text. Every detail must be retained.
+2. **Machine-Optimized Formatting:** Reformat the text in a way that is optimized for language model understanding rather than human readability. This means using structured tokens, clear section markers (like identifiers for headers, paragraphs, lists, etc.), and any other format that can help the model parse and understand the content without ambiguity.
+3. **Maintain Semantic Structure:** Ensure that the relationships, hierarchies, and semantic groupings within the content are clearly annotated.
+4. **No Extraneous Human-Centric Styling:** Avoid any formatting that is solely intended to enhance human aesthetics (e.g., decorative fonts, excessive whitespace) unless it aids the model’s parsing.
+
+Below is the original text:
+
+I have a large amount of well-formatted text for a machine learning course. Please parse all of the context provided and create flashcards that capture every relevant detail (do not omit any key information unless it is merely filler). Each flashcard must be formatted as a Python dictionary in plain text, following this exact structure:
+
+```
+{
+    'question': """<b>Your question text here:</b><br><ul>
+    <li>Option A...</li>
+    <li>Option B...</li>
+    <li>Option C...</li>
+    <li>Option D...</li>
+    <li>Option E...</li>
+</ul>""",
+    'answer': "<b>Answer:</b> [Correct Option]"
+}
+```
+
+Ensure that:
+1. Every flashcard is enclosed in curly braces `{}` and flashcards are comma-separated.
+2. The 'question' field uses HTML formatting (as shown) to present the question and options.
+3. The 'answer' field clearly states the correct answer, also with HTML formatting.
+4. The output is returned as plain text.
+5. All relevant content from the input text is used to create comprehensive flashcards on the machine learning material.
+
+Generate the flashcards accordingly.
+---
+Below is the given context:

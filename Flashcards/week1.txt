@@ -1,0 +1,540 @@
+{
+    'question': """<b>What type of data is primarily considered in this course?</b><br><ul>
+    <li>Option A: Numeric data</li>
+    <li>Option B: Textual data</li>
+    <li>Option C: Image data</li>
+    <li>Option D: Audio data</li>
+    <li>Option E: Video data</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which example of data is described as continuous and positive, potentially unbounded to the right?</b><br><ul>
+    <li>Option A: Your age</li>
+    <li>Option B: Your income</li>
+    <li>Option C: Your major</li>
+    <li>Option D: Your address</li>
+    <li>Option E: An empty field</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which example provided is categorical and requires preprocessing?</b><br><ul>
+    <li>Option A: Your age</li>
+    <li>Option B: Your income</li>
+    <li>Option C: Your major</li>
+    <li>Option D: Your address</li>
+    <li>Option E: An empty field</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Which of the following data types is not inherently numeric and may need to be transformed?</b><br><ul>
+    <li>Option A: Your age</li>
+    <li>Option B: Your income</li>
+    <li>Option C: Your major</li>
+    <li>Option D: Your address</li>
+    <li>Option E: An empty field</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option D"
+},
+{
+    'question': """<b>Which method is NOT mentioned as a way to transform non‐numeric data?</b><br><ul>
+    <li>Option A: Using coordinates</li>
+    <li>Option B: Using polar references</li>
+    <li>Option C: Using distance to a center point or to other points</li>
+    <li>Option D: Using Fourier transforms</li>
+    <li>Option E: Using other unspecified methods</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option D"
+},
+{
+    'question': """<b>In supervised learning, what does the variable 𝑦 represent?</b><br><ul>
+    <li>Option A: Input features</li>
+    <li>Option B: The outcome we are interested in predicting</li>
+    <li>Option C: Transformation parameters</li>
+    <li>Option D: A measure of data noise</li>
+    <li>Option E: A preprocessing indicator</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which loss function is typically used for regression problems?</b><br><ul>
+    <li>Option A: Mean Squared Error</li>
+    <li>Option B: Cross-Entropy</li>
+    <li>Option C: Hinge Loss</li>
+    <li>Option D: Absolute Error</li>
+    <li>Option E: Log Loss</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which loss function is commonly associated with classification problems?</b><br><ul>
+    <li>Option A: Mean Squared Error</li>
+    <li>Option B: Cross-Entropy</li>
+    <li>Option C: Hinge Loss</li>
+    <li>Option D: Absolute Error</li>
+    <li>Option E: Euclidean Distance</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>If 𝑦ᵢ is discrete and unordered, what is the corresponding supervised problem called?</b><br><ul>
+    <li>Option A: Regression</li>
+    <li>Option B: Classification</li>
+    <li>Option C: Clustering</li>
+    <li>Option D: Dimensionality Reduction</li>
+    <li>Option E: Association Analysis</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>If 𝑦ᵢ ∈ {0,1} for every sample, the classification problem is termed:</b><br><ul>
+    <li>Option A: Multiclass</li>
+    <li>Option B: Binary</li>
+    <li>Option C: Regression</li>
+    <li>Option D: Clustering</li>
+    <li>Option E: Ordinal</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What type of learning is indicated when no target variable set 𝑌 exists?</b><br><ul>
+    <li>Option A: Supervised learning</li>
+    <li>Option B: Unsupervised learning</li>
+    <li>Option C: Semi-supervised learning</li>
+    <li>Option D: Reinforcement learning</li>
+    <li>Option E: Transfer learning</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>In the Old Faithful dataset, what are the two key variables recorded?</b><br><ul>
+    <li>Option A: Eruptions and Waiting times</li>
+    <li>Option B: Age and Income</li>
+    <li>Option C: Temperature and Pressure</li>
+    <li>Option D: Speed and Duration</li>
+    <li>Option E: Height and Weight</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What does the statistical model f(𝑥) represent in this context?</b><br><ul>
+    <li>Option A: A function that provides a prediction 𝑦̂ for each input 𝑥</li>
+    <li>Option B: A measure of the variability in the data</li>
+    <li>Option C: A preprocessing step for missing values</li>
+    <li>Option D: A method for transforming non-numeric data</li>
+    <li>Option E: A regularization parameter</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which loss function is used to measure model performance in regression problems?</b><br><ul>
+    <li>Option A: Mean Squared Error</li>
+    <li>Option B: Cross-Entropy</li>
+    <li>Option C: Hinge Loss</li>
+    <li>Option D: Absolute Error</li>
+    <li>Option E: Zero-One Loss</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which loss function is used for classification problems?</b><br><ul>
+    <li>Option A: Mean Squared Error</li>
+    <li>Option B: Cross-Entropy</li>
+    <li>Option C: Hinge Loss</li>
+    <li>Option D: Absolute Error</li>
+    <li>Option E: Squared Hinge Loss</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What does 'joint density' refer to in the model definition?</b><br><ul>
+    <li>Option A: The joint probability distribution 𝑃(𝑋,𝑌)</li>
+    <li>Option B: The loss function for the model</li>
+    <li>Option C: The prediction function f(𝑥)</li>
+    <li>Option D: The feature vector for each sample</li>
+    <li>Option E: The regularization term in the model</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the mathematical expression for the individual Mean Square Error?</b><br><ul>
+    <li>Option A: (𝑦ᵢ − 𝑦̂ᵢ)²</li>
+    <li>Option B: |𝑦ᵢ − 𝑦̂ᵢ|</li>
+    <li>Option C: −𝑦ᵢ · log(𝑦̂ᵢ)</li>
+    <li>Option D: 𝑦ᵢ − 𝑦̂ᵢ</li>
+    <li>Option E: (𝑦ᵢ − 𝑦̂ᵢ)³</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Mean Square Error is most appropriate for which type of problem?</b><br><ul>
+    <li>Option A: Classification</li>
+    <li>Option B: Regression</li>
+    <li>Option C: Clustering</li>
+    <li>Option D: Dimensionality Reduction</li>
+    <li>Option E: Feature Selection</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which characteristic of Mean Square Error is highlighted in the text?</b><br><ul>
+    <li>Option A: It punishes extreme errors heavily</li>
+    <li>Option B: It does not punish extreme errors too much</li>
+    <li>Option C: It is highly robust to outliers</li>
+    <li>Option D: It is only applicable to classification</li>
+    <li>Option E: It is computationally expensive</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>In the context of cross-entropy, what is the mapping defined by the model function f?</b><br><ul>
+    <li>Option A: f: ℝᵖ → ℝ</li>
+    <li>Option B: f: ℝᵖ → [0,1]ᵏ</li>
+    <li>Option C: f: ℝᵖ → ℝᵖ</li>
+    <li>Option D: f: ℝᵖ → ℤ</li>
+    <li>Option E: f: ℝᵖ → {0,1}</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which equation represents the binary cross-entropy loss function?</b><br><ul>
+    <li>Option A: l(𝑦,𝑦̂) = (𝑦 − 𝑦̂)²</li>
+    <li>Option B: l(𝑦,𝑦̂) = –𝑦 · log(𝑦̂) – (1–𝑦) · log(1–𝑦̂)</li>
+    <li>Option C: l(𝑦,𝑦̂) = 𝑦 · log(𝑦̂)</li>
+    <li>Option D: l(𝑦,𝑦̂) = |𝑦 − 𝑦̂|</li>
+    <li>Option E: l(𝑦,𝑦̂) = 𝑦/𝑦̂</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is the expression for the multinomial cross-entropy loss function?</b><br><ul>
+    <li>Option A: l(𝑦,𝑦̂) = – ∑ₖ 𝑦ₖ · log(𝑦̂ₖ)</li>
+    <li>Option B: l(𝑦,𝑦̂) = (𝑦 − 𝑦̂)²</li>
+    <li>Option C: l(𝑦,𝑦̂) = ∑|𝑦 − 𝑦̂|</li>
+    <li>Option D: l(𝑦,𝑦̂) = –𝑦 · log(𝑦̂)</li>
+    <li>Option E: l(𝑦,𝑦̂) = log(1–𝑦̂)</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>For what type of outputs is cross-entropy particularly appropriate?</b><br><ul>
+    <li>Option A: Continuous values</li>
+    <li>Option B: Probabilities</li>
+    <li>Option C: Binary numbers</li>
+    <li>Option D: Raw scores</li>
+    <li>Option E: One-dimensional data</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is the primary objective when obtaining the 'best' model in regression?</b><br><ul>
+    <li>Option A: Maximize the loss function</li>
+    <li>Option B: Minimize the expected error over the distribution</li>
+    <li>Option C: Maximize the joint probability density</li>
+    <li>Option D: Minimize data variance</li>
+    <li>Option E: Maximize feature selection</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>In the context of minimum squared error, what is the regression function f(𝑥) equal to?</b><br><ul>
+    <li>Option A: f(𝑥) = E[𝑌 | 𝑋 = 𝑥]</li>
+    <li>Option B: f(𝑥) = Var(𝑌)</li>
+    <li>Option C: f(𝑥) = max(𝑌)</li>
+    <li>Option D: f(𝑥) = min(𝑌)</li>
+    <li>Option E: f(𝑥) = Median(𝑌)</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which field studies the theoretical foundations of estimating the function f(𝑥) in statistical models?</b><br><ul>
+    <li>Option A: Deep Learning</li>
+    <li>Option B: Statistical Learning Theory</li>
+    <li>Option C: Data Mining</li>
+    <li>Option D: Reinforcement Learning</li>
+    <li>Option E: Neural Networks</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>In the process of obtaining the optimal estimate, what does the parameter 𝛽 represent?</b><br><ul>
+    <li>Option A: A data sample</li>
+    <li>Option B: Parameters that determine the function f(𝑥)</li>
+    <li>Option C: The loss function</li>
+    <li>Option D: The target variable</li>
+    <li>Option E: The noise component</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is the optimization problem formulated for obtaining the optimal estimate in terms of 𝛽?</b><br><ul>
+    <li>Option A: max₍𝛽₎ E[𝐿(𝑌, f(𝑥|𝛽))]</li>
+    <li>Option B: min₍𝛽₎ E[𝐿(𝑌, f(𝑥|𝛽))]</li>
+    <li>Option C: min₍𝛽₎ f(𝑥|𝛽)</li>
+    <li>Option D: max₍𝛽₎ f(𝑥|𝛽)</li>
+    <li>Option E: Σ₍𝛽₎ f(𝑥|𝛽)</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is the formula for a linear regression model as given in the text?</b><br><ul>
+    <li>Option A: f(𝑥) = 𝛽ᵀ𝑥 + 𝜀</li>
+    <li>Option B: f(𝑥) = 𝑥ᵀ𝛽</li>
+    <li>Option C: f(𝑥) = 𝛽𝑥</li>
+    <li>Option D: f(𝑥) = 𝜀</li>
+    <li>Option E: f(𝑥) = 𝛽 + 𝑥</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the loss function used in linear regression?</b><br><ul>
+    <li>Option A: 𝐿(𝑌, Ŷ) = (𝑋𝛽 − 𝑌)ᵀ (𝑋𝛽 − 𝑌)</li>
+    <li>Option B: 𝐿(𝑌, Ŷ) = (𝑌 − Ŷ)²</li>
+    <li>Option C: 𝐿(𝑌, Ŷ) = −𝑦 log(𝑦̂)</li>
+    <li>Option D: 𝐿(𝑌, Ŷ) = |𝑌 − Ŷ|</li>
+    <li>Option E: 𝐿(𝑌, Ŷ) = 𝑋𝛽 + 𝑌</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the solution for the parameter 𝛽 in linear regression?</b><br><ul>
+    <li>Option A: 𝛽 = (𝑋ᵀ𝑋) 𝑋ᵀ𝑌</li>
+    <li>Option B: 𝛽 = (𝑋ᵀ𝑋)⁻¹ 𝑋ᵀ𝑌</li>
+    <li>Option C: 𝛽 = 𝑋ᵀ𝑌</li>
+    <li>Option D: 𝛽 = (𝑋ᵀ𝑌)⁻¹ 𝑋ᵀ𝑋</li>
+    <li>Option E: 𝛽 = 𝑋ᵀ(𝑋)⁻¹𝑌</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>How are models typically obtained in practice according to the text?</b><br><ul>
+    <li>Option A: By manually deriving functions</li>
+    <li>Option B: Programmatically with automatic differentiation</li>
+    <li>Option C: By guessing parameters</li>
+    <li>Option D: Through theoretical analysis only</li>
+    <li>Option E: By data visualization techniques</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which library is mentioned as a tool for automatic differentiation?</b><br><ul>
+    <li>Option A: TensorFlow</li>
+    <li>Option B: PyTorch</li>
+    <li>Option C: scikit-learn</li>
+    <li>Option D: Keras</li>
+    <li>Option E: NumPy</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What are two practical approaches for model estimation mentioned in the text?</b><br><ul>
+    <li>Option A: Direct implementation with an optimizer and using scikit-learn</li>
+    <li>Option B: Manual derivation and data entry</li>
+    <li>Option C: Random guessing and trial-error</li>
+    <li>Option D: Neural network design and hyperparameter tuning</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What are the main goals of the Data Understanding phase in data preprocessing?</b><br><ul>
+    <li>Option A: Data visualization only</li>
+    <li>Option B: Variable selection and data cleansing</li>
+    <li>Option C: Model deployment</li>
+    <li>Option D: Hyperparameter tuning</li>
+    <li>Option E: Data encryption</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is a key motivation for data cleaning in preprocessing?</b><br><ul>
+    <li>Option A: To add noise to the data</li>
+    <li>Option B: To handle dirty, noisy, inconsistent, and incomplete data</li>
+    <li>Option C: To increase data redundancy</li>
+    <li>Option D: To eliminate model errors</li>
+    <li>Option E: To bypass data integration issues</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which of the following is NOT a reason for missing values according to the text?</b><br><ul>
+    <li>Option A: Non-applicable</li>
+    <li>Option B: Not disclosed</li>
+    <li>Option C: Error when merging data</li>
+    <li>Option D: High precision measurement</li>
+    <li>Option E: Typos in name or ID</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option D"
+},
+{
+    'question': """<b>Which strategy is recommended when a variable has too many missing values?</b><br><ul>
+    <li>Option A: Keep all missing values</li>
+    <li>Option B: Delete the variable or observation</li>
+    <li>Option C: Replace with the mean only</li>
+    <li>Option D: Ignore preprocessing</li>
+    <li>Option E: Use automatic differentiation</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is a recommended approach for handling missing values in categorical (ordinal/nominal) data?</b><br><ul>
+    <li>Option A: Replace with the median</li>
+    <li>Option B: Replace with the modal value</li>
+    <li>Option C: Replace with the mean</li>
+    <li>Option D: Replace using z-scores</li>
+    <li>Option E: Replace with a random value</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is a suggested method for imputing missing values in continuous data?</b><br><ul>
+    <li>Option A: Replace with the mode</li>
+    <li>Option B: Replace with the median or mean</li>
+    <li>Option C: Delete all missing entries</li>
+    <li>Option D: Replace with zero</li>
+    <li>Option E: Replace with the maximum value</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What does the 'Deleting Missing Values' table illustrate?</b><br><ul>
+    <li>Option A: A sample dataset with missing entries in attributes like Marital Status and Income</li>
+    <li>Option B: A visualization of imputation procedures</li>
+    <li>Option C: The formula for z-scores</li>
+    <li>Option D: A model loss function</li>
+    <li>Option E: A list of data cleaning steps</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is a recommended imputation method for continuous attributes?</b><br><ul>
+    <li>Option A: Replace with the median or mean</li>
+    <li>Option B: Replace with the modal value</li>
+    <li>Option C: Delete the attribute</li>
+    <li>Option D: Use clustering methods</li>
+    <li>Option E: Replace with the mode only</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>In regression or tree-based imputation, what must be avoided when predicting missing values?</b><br><ul>
+    <li>Option A: Using multiple predictors</li>
+    <li>Option B: Using the target class as a predictor</li>
+    <li>Option C: Using mean imputation</li>
+    <li>Option D: Using mode imputation</li>
+    <li>Option E: Using median imputation</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What distinguishes valid from invalid outliers in data preprocessing?</b><br><ul>
+    <li>Option A: Valid outliers are always errors</li>
+    <li>Option B: Invalid outliers are due to data entry errors</li>
+    <li>Option C: Valid outliers represent genuine extreme observations while invalid ones likely result from errors</li>
+    <li>Option D: All outliers are invalid</li>
+    <li>Option E: Outliers are not considered in data cleaning</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Outlier analysis in the text includes which two perspectives?</b><br><ul>
+    <li>Option A: Univariate and multivariate</li>
+    <li>Option B: Linear and nonlinear</li>
+    <li>Option C: Supervised and unsupervised</li>
+    <li>Option D: Categorical and continuous</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What action is recommended for outliers that occur due to low sample values?</b><br><ul>
+    <li>Option A: Treat as null values</li>
+    <li>Option B: Remove them and document the removal in the policy</li>
+    <li>Option C: Impute using the mean</li>
+    <li>Option D: Replace with the median</li>
+    <li>Option E: Ignore them</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What should be done for outliers that arise due to input errors?</b><br><ul>
+    <li>Option A: Remove them</li>
+    <li>Option B: Treat them as missing values</li>
+    <li>Option C: Keep them unchanged</li>
+    <li>Option D: Double-check the data source</li>
+    <li>Option E: Increase their influence in the model</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>How is the z-score for an observation calculated?</b><br><ul>
+    <li>Option A: z = (x – μ) / σ</li>
+    <li>Option B: z = (μ – x) / σ</li>
+    <li>Option C: z = x / σ</li>
+    <li>Option D: z = μ / σ</li>
+    <li>Option E: z = (x – σ) / μ</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>According to the normal distribution, what percentage of values lie within 3 standard deviations of the mean?</b><br><ul>
+    <li>Option A: 68%</li>
+    <li>Option B: 95%</li>
+    <li>Option C: 99.7%</li>
+    <li>Option D: 100%</li>
+    <li>Option E: 50%</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>When is an observation considered an outlier based on its z-score?</b><br><ul>
+    <li>Option A: When |z| > 1</li>
+    <li>Option B: When |z| > 2</li>
+    <li>Option C: When |z| > 3</li>
+    <li>Option D: When |z| > 0</li>
+    <li>Option E: When |z| > 5</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Which six numbers are represented in a box plot as described in the text?</b><br><ul>
+    <li>Option A: Mean, Mode, Median, Standard deviation, Variance, Range</li>
+    <li>Option B: Minimum, First Quartile (Q1), Median, Third Quartile (Q3), Maximum, Interquartile Range (IQR)</li>
+    <li>Option C: Minimum, Q1, Q2, Q3, Maximum, IQR</li>
+    <li>Option D: Median, Q1, Q3, IQR, Variance, Mean</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is one recommended method for treating valid outliers?</b><br><ul>
+    <li>Option A: Ignoring them</li>
+    <li>Option B: Using truncation/winsorizing/capping methods</li>
+    <li>Option C: Doubling their values</li>
+    <li>Option D: Replacing them with random numbers</li>
+    <li>Option E: Normalizing them to zero</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which method uses a sigmoid function to transform outliers?</b><br><ul>
+    <li>Option A: z-score based truncation</li>
+    <li>Option B: IQR-based truncation</li>
+    <li>Option C: Sigmoid transform</li>
+    <li>Option D: Mean imputation</li>
+    <li>Option E: Mode replacement</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Was a specific example provided for truncation in the text?</b><br><ul>
+    <li>Option A: Yes, a detailed example was provided</li>
+    <li>Option B: Only a brief mention was made</li>
+    <li>Option C: No, an example was not provided</li>
+    <li>Option D: Multiple examples were given</li>
+    <li>Option E: An example is provided in an appendix</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+}
