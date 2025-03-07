@@ -1,0 +1,300 @@
+{
+    'question': """<b>Which of the following topics is included in the course agenda?</b><br><ul>
+    <li>Option A: Validating Models</li>
+    <li>Option B: Error Decomposition</li>
+    <li>Option C: Bias-Variance Trade-Off</li>
+    <li>Option D: Measuring in Practice</li>
+    <li>Option E: Classification Performance Measures</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option E"
+},
+{
+    'question': """<b>In Model 1, which formula represents the test prediction?</b><br><ul>
+    <li>Option A: ŷᵢ = f(xᵢ, θ̂)</li>
+    <li>Option B: ŷᵢ = f(xᵢ, θ)</li>
+    <li>Option C: ŷᵢ = g(xᵢ, η̂)</li>
+    <li>Option D: ŷᵢ = g(xᵢ, η)</li>
+    <li>Option E: ŷᵢ = f(xᵢ, θ̂) + noise</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>For Model 2, which formula represents the test loss?</b><br><ul>
+    <li>Option A: L(y, f(xᵢ, θ̂))</li>
+    <li>Option B: L(y, g(xᵢ, η̂))</li>
+    <li>Option C: L(y, f(xᵢ, θ))</li>
+    <li>Option D: L(y, g(xᵢ, η))</li>
+    <li>Option E: L(y, g(xᵢ, η̂)) + regularization</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which performance measure is defined by the formula: MSE = (1/n) ∑ᵢ₌₁ⁿ (ŷᵢ − yᵢ)²?</b><br><ul>
+    <li>Option A: Root Mean Squared Error (RMSE)</li>
+    <li>Option B: Mean Squared Error (MSE)</li>
+    <li>Option C: Mean Absolute Error (MAE)</li>
+    <li>Option D: Mean Relative Error (MRE)</li>
+    <li>Option E: R-squared</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which performance measure is defined as: RMSE = √[(1/n) ∑ᵢ₌₁ⁿ (ŷᵢ − yᵢ)²]?</b><br><ul>
+    <li>Option A: RMSE</li>
+    <li>Option B: MSE</li>
+    <li>Option C: MAE</li>
+    <li>Option D: MRE</li>
+    <li>Option E: R-squared</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which measure calculates the average absolute difference between predictions and actual values?</b><br><ul>
+    <li>Option A: Mean Absolute Error (MAE)</li>
+    <li>Option B: Mean Squared Error (MSE)</li>
+    <li>Option C: Root Mean Squared Error (RMSE)</li>
+    <li>Option D: Mean Relative Error (MRE)</li>
+    <li>Option E: R-squared</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which error measure requires a meaningful zero-point to be interpretable?</b><br><ul>
+    <li>Option A: MAE</li>
+    <li>Option B: RMSE</li>
+    <li>Option C: MSE</li>
+    <li>Option D: MRE</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option D"
+},
+{
+    'question': """<b>In the train/validation/test split, which set is used exclusively for calculating final performance metrics?</b><br><ul>
+    <li>Option A: Train Set</li>
+    <li>Option B: Validation Set</li>
+    <li>Option C: Test (Holdout) Set</li>
+    <li>Option D: Both Train and Test Sets</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Which of the following practices helps avoid test set leakage?</b><br><ul>
+    <li>Option A: Using test data for hyperparameter tuning</li>
+    <li>Option B: Calculating medians/modes over the entire dataset</li>
+    <li>Option C: Splitting data into train, validation, and test sets at the very beginning</li>
+    <li>Option D: Selecting variables based on test set performance</li>
+    <li>Option E: Revisiting splits after using the test set</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>What does the expected conditional test error (Err_D) represent?</b><br><ul>
+    <li>Option A: Error calculated over training data</li>
+    <li>Option B: Expected test error for a new test set given a fixed training set</li>
+    <li>Option C: Overall expected error across all datasets</li>
+    <li>Option D: Error computed only on the test set</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which formula represents the irreducible error in the bias-variance decomposition?</b><br><ul>
+    <li>Option A: yᵢ = f(xᵢ) + ϵ</li>
+    <li>Option B: Bias = E[f̂(xᵢ)] − f(xᵢ)</li>
+    <li>Option C: Variance = E[(f̂(xᵢ) − E[f̂(xᵢ)])²]</li>
+    <li>Option D: MSE = (1/n) ∑ᵢ₌₁ⁿ (ŷᵢ − yᵢ)²</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How is bias defined in the bias-variance decomposition?</b><br><ul>
+    <li>Option A: Bias = E[f̂(xᵢ)] − f(xᵢ)</li>
+    <li>Option B: Bias = f(xᵢ) − E[f̂(xᵢ)]</li>
+    <li>Option C: Bias = E[(f̂(xᵢ) − E[f̂(xᵢ)])²]</li>
+    <li>Option D: Bias = f̂(xᵢ) − f(xᵢ)</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which models are noted for possessing the Universal Approximation Property?</b><br><ul>
+    <li>Option A: Linear models</li>
+    <li>Option B: Decision trees</li>
+    <li>Option C: Neural networks and tree ensembles</li>
+    <li>Option D: K-nearest neighbors</li>
+    <li>Option E: Support Vector Machines</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>What does variance measure in the bias-variance decomposition?</b><br><ul>
+    <li>Option A: Systematic error</li>
+    <li>Option B: Random noise</li>
+    <li>Option C: Variability of the fitted model around its average</li>
+    <li>Option D: Bias in model predictions</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Why is the hypothesis space ℋ₁ (linear functions) considered a subset of ℋ₂ (quadratic functions)?</b><br><ul>
+    <li>Option A: Because every linear function is also a quadratic function</li>
+    <li>Option B: Because quadratic functions are less complex than linear functions</li>
+    <li>Option C: Because ℋ₁ is more flexible than ℋ₂</li>
+    <li>Option D: Because ℋ₂ has fewer parameters</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How is the optimal model h* defined in a hypothesis space ℋ?</b><br><ul>
+    <li>Option A: h* = argmax₍h′ ∈ ℋ₎ (loss)</li>
+    <li>Option B: h* = argmin₍h′ ∈ ℋ₎ (average loss over training data)</li>
+    <li>Option C: h* = average of all models in ℋ</li>
+    <li>Option D: h* = random selection from ℋ</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>How do training and test errors typically compare in model evaluation?</b><br><ul>
+    <li>Option A: Training error is typically higher than test error</li>
+    <li>Option B: They are usually equal</li>
+    <li>Option C: Training error is typically lower than test error</li>
+    <li>Option D: Test error is irrelevant</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Which method is recommended for performance evaluation in large datasets?</b><br><ul>
+    <li>Option A: N-fold cross validation</li>
+    <li>Option B: Split sample method</li>
+    <li>Option C: Leave-One-Out cross validation</li>
+    <li>Option D: Bootstrapping</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which method is generally preferred for performance evaluation in small to medium-sized datasets?</b><br><ul>
+    <li>Option A: Split sample method</li>
+    <li>Option B: N-fold cross validation</li>
+    <li>Option C: Bootstrapping</li>
+    <li>Option D: Full sample evaluation</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>In a binary classification confusion matrix, what does a False Negative (FN) represent?</b><br><ul>
+    <li>Option A: Predicted positive when the actual class is positive</li>
+    <li>Option B: Predicted negative when the actual class is positive</li>
+    <li>Option C: Predicted positive when the actual class is negative</li>
+    <li>Option D: Predicted negative when the actual class is negative</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What does the ROC curve plot in model evaluation?</b><br><ul>
+    <li>Option A: Sensitivity vs Specificity</li>
+    <li>Option B: Sensitivity vs (1 − Specificity)</li>
+    <li>Option C: Precision vs Recall</li>
+    <li>Option D: Accuracy vs Error Rate</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>How is the Area Under the ROC Curve (AUC) interpreted in a credit scoring context?</b><br><ul>
+    <li>Option A: As the model's error rate</li>
+    <li>Option B: As the probability that a randomly chosen negative instance is ranked higher than a positive one</li>
+    <li>Option C: As the probability that a randomly chosen positive instance is ranked higher than a randomly chosen negative instance</li>
+    <li>Option D: As the overall accuracy</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>Which methods are used for calculating AUC in multi-class classification?</b><br><ul>
+    <li>Option A: One versus all approach</li>
+    <li>Option B: One versus one approach</li>
+    <li>Option C: Both one versus all and one versus one approaches</li>
+    <li>Option D: Only one versus all</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option C"
+},
+{
+    'question': """<b>What are the criteria for choosing the size of the test set?</b><br><ul>
+    <li>Option A: It should be as large as possible</li>
+    <li>Option B: It should be big enough to detect differences in test error but small enough to leave sufficient data for training</li>
+    <li>Option C: It should be equal to the training set size</li>
+    <li>Option D: It should include all available data</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>When is cross-validated error particularly useful in performance measurement?</b><br><ul>
+    <li>Option A: When the dataset is large</li>
+    <li>Option B: When bootstrapping is too expensive or the dataset is small</li>
+    <li>Option C: When only the training set is available</li>
+    <li>Option D: When the test set is leaked</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What does overfitting refer to in model training?</b><br><ul>
+    <li>Option A: When the model performs equally well on training and test data</li>
+    <li>Option B: When training error decreases while test error increases</li>
+    <li>Option C: When both training and test errors decrease</li>
+    <li>Option D: When the model is too simple</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is the difference between the training and test prediction formulas in Model 1?</b><br><ul>
+    <li>Option A: There is no difference</li>
+    <li>Option B: Training uses ŷᵢ = f(xᵢ, θ) while test uses ŷᵢ = f(xᵢ, θ̂)</li>
+    <li>Option C: Training uses ŷᵢ = f(xᵢ, θ̂) while test uses ŷᵢ = f(xᵢ, θ)</li>
+    <li>Option D: Both use θ̂</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which practice is important in the split sample method for maintaining a representative class distribution?</b><br><ul>
+    <li>Option A: Randomly selecting without stratification</li>
+    <li>Option B: Stratifying to maintain the same class distribution in both training and test sets</li>
+    <li>Option C: Using only the training set for model building</li>
+    <li>Option D: Ignoring class balance during the split</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>What is a key advantage of using the leave-one-out cross validation method?</b><br><ul>
+    <li>Option A: It is computationally inexpensive</li>
+    <li>Option B: It uses nearly all data for training in each iteration</li>
+    <li>Option C: It provides a high bias estimate</li>
+    <li>Option D: It is only applicable to large datasets</li>
+    <li>Option E: None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option B"
+},
+{
+    'question': """<b>Which of the following is NOT a performance measure for classification mentioned in the context?</b><br><ul>
+    <li>Option A: Percentage Correctly Classified (PCC)</li>
+    <li>Option B: Sensitivity</li>
+    <li>Option C: Specificity</li>
+    <li>Option D: Area Under the ROC Curve (AUC)</li>
+    <li>Option E: Mean Absolute Error (MAE)</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option E"
+}

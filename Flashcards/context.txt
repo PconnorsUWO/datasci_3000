@@ -7,6 +7,7 @@ I have a large block of text from a data science course that needs to be reforma
 
 Below is the original text:
 
+
 I have a large amount of well-formatted text for a machine learning course. Please parse all of the context provided and create flashcards that capture every relevant detail (do not omit any key information unless it is merely filler). Each flashcard must be formatted as a Python dictionary in plain text, following this exact structure:
 
 ```
@@ -31,4 +32,9 @@ Ensure that:
 
 Generate the flashcards accordingly.
 ---
+Below is the given context:
+
+
+Given the following formatted text on introductory machine learning concepts, please generate comprehensive, detailed notes designed to help me fully ingest and understand the material. Expand upon any context as needed to clarify foundational ideas. In your notes, include definitions, key algorithm explanations, examples, and highlight concepts that are likely to be the focus of multiple-choice questions for my midterm exam. Structure the notes with clear headings, bullet points, and concise summaries for each section of the content.
+
 Below is the given context:

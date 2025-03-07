@@ -28,4 +28,4 @@ if __name__ == '__main__':
         '''
     )
 
-    gen_flashcards("week1.txt","ds3000_week1.apkg","ds3000_week1", anki_model=anki_model)
+    gen_flashcards("week5.txt","ds3000_week5.apkg","ds3000_week5", anki_model=anki_model)

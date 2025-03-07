@@ -1,0 +1,349 @@
+Below are comprehensive, detailed notes based on the provided material. The notes are organized by topic with clear headings, bullet points, and summaries to help you fully understand the foundational ideas, definitions, key algorithms, examples, and concepts that are likely to be exam focal points.
+
+---
+
+# Likelihood and Logistic Regression – Comprehensive Notes
+
+**Instructor:** Cristián Bravo  
+**Contact:** CBRAVORO@UWO.CA (Office 280)
+
+---
+
+## Agenda
+
+- **Likelihood Methods**
+- **Logistic Regression**
+
+These topics form the basis for understanding how we model data probability and classify outcomes using regression techniques.
+
+---
+
+## 1. Likelihood
+
+### 1.1. Definition of Likelihood
+
+- **Core Idea:**  
+  - *Likelihood* asks: “Given a distribution with parameters 𝜃, how likely are my data?”  
+  - It measures the joint probability of the observed data under a specified model.
+  
+- **i.i.d. Assumption:**  
+  - When data items are independent and identically distributed (i.i.d.), the overall likelihood is the product of the individual probabilities or density values.
+
+### 1.2. Likelihood Equations
+
+- **Discrete Case:**  
+  - \[
+    \mathcal{L}(\theta; y_1, y_2, \dots, y_n) = \prod_{i=1}^n p_Y(\theta; y_i)
+    \]
+- **Continuous Case:**  
+  - \[
+    \mathcal{L}(\theta; y_1, y_2, \dots, y_n) = \prod_{i=1}^n f_Y(\theta; y_i)
+    \]
+
+### 1.3. Likelihood Examples
+
+- **Example 1:**  
+  - Parameters: 𝜇_Y = 0, 𝜎_Y² = 1  
+  - Likelihood ≈ 7.763261e-08
+- **Example 2:**  
+  - Parameters: 𝜇_Y = 5, 𝜎_Y² = 5  
+  - Likelihood ≈ 1.083736e-13
+- **Note:**  
+  - The variable 𝑦 represents the observed data.
+
+---
+
+## 2. Log Likelihood
+
+### 2.1. Why Use Log Likelihood?
+
+- **Maximization Equivalence:**  
+  - Maximizing the likelihood is equivalent to maximizing the log likelihood because if 𝑎 > 𝑏 then log(𝑎) > log(𝑏).
+  
+- **Computational Advantages:**
+  - **Transforms Products into Sums:**  
+    - \(\log(a \times b) = \log(a) + \log(b)\)
+  - **Numerical Stability:**  
+    - Helps avoid underflow issues with very small probability values.
+  - **Simpler Form for Exponential-Family Distributions:**  
+    - Many common distributions become easier to work with once logged.
+
+### 2.2. Log Likelihood Equations
+
+- **Discrete:**  
+  - \[
+    \ell(\theta; y_1, y_2, \dots, y_n) = \sum_{i=1}^n \log\left(p_Y(\theta; y_i)\right)
+    \]
+- **Continuous:**  
+  - \[
+    \ell(\theta; y_1, y_2, \dots, y_n) = \sum_{i=1}^n \log\left(f_Y(\theta; y_i)\right)
+    \]
+
+### 2.3. Log Likelihood Examples
+
+- **Example 1:**  
+  - Parameters: 𝜇_Y = 0, 𝜎_Y² = 1  
+  - Log Likelihood ≈ -16.37128
+- **Example 2:**  
+  - Parameters: 𝜇_Y = 5, 𝜎_Y² = 5  
+  - Log Likelihood ≈ -29.85319
+
+---
+
+## 3. Maximum Likelihood Principle
+
+### 3.1. Key Steps
+
+- **Model Selection:**  
+  - Identify a set of possible distributions (e.g., the set of all normal distributions) that could describe the data.
+  
+- **Parameter Estimation:**  
+  - Find the specific distribution (i.e., the parameters) that makes the observed data most likely.
+
+- **Inference and Prediction:**  
+  - Use the chosen model for statistical inference and to predict new data.
+
+### 3.2. Conceptual Focus
+
+- Maximum likelihood is the backbone for many estimation methods in statistics and machine learning.
+- Often used to estimate parameters by setting the derivative of the log likelihood with respect to each parameter to zero and solving for the parameter.
+
+---
+
+## 4. Normal Log Likelihood
+
+### 4.1. Density Function of the Normal Distribution
+
+- **Probability Density Function (PDF):**  
+  \[
+  f_Y(y) = \frac{1}{\sqrt{2\pi \sigma_Y^2}} \exp\left(-\frac{(y-\mu_Y)^2}{2\sigma_Y^2}\right)
+  \]
+  
+### 4.2. Log Density Function
+
+- **Taking the Log:**  
+  - \(\log\left(f_Y(y)\right) = - \log(2\pi) - \log(\sigma_Y^2) - \frac{(y-\mu_Y)^2}{2\sigma_Y^2}\)
+  
+- **Key Note:**  
+  - The log transformation simplifies the product form (when dealing with multiple observations) into a sum.
+
+### 4.3. Summation Form for Normal Log Likelihood
+
+- **Overall Log Likelihood for n Samples:**  
+  \[
+  \ell(\mu_Y, \sigma_Y^2; y_1, \dots, y_n) = \sum_{i=1}^n \left[ - \log(2\pi) - \log(\sigma_Y^2) - \frac{(y_i - \mu_Y)^2}{2\sigma_Y^2} \right]
+  \]
+- **Alternative Expression:**  
+  \[
+  = - n \log(2\pi) - n \log(\sigma_Y^2) - \frac{1}{2\sigma_Y^2} \sum_{i=1}^n (y_i - \mu_Y)^2
+  \]
+
+---
+
+## 5. Maximum Likelihood Estimation (MLE)
+
+### 5.1. Estimating Parameters for the Normal Distribution
+
+- **MLE for Mean (𝜇_Y):**  
+  - Set the derivative of the log likelihood with respect to 𝜇_Y to zero:
+    \[
+    \frac{\partial \ell}{\partial \mu_Y} = \frac{2}{n} \sum_{i=1}^n (y_i - \mu_Y) = 0 \quad \Rightarrow \quad \mu_Y = \frac{1}{n} \sum_{i=1}^n y_i
+    \]
+  - **Interpretation:**  
+    - The optimal estimate for the mean is the sample average.
+
+- **MLE for Variance (𝜎_Y):**  
+  - A similar derivative process provides the optimal estimate for 𝜎_Y, ensuring that the variance is chosen to best “explain” the observed data.
+  
+### 5.2. MLE Examples
+
+- **Example 1:**  
+  - Given: 𝜇_Y = 0, 𝜎_Y² = 1 → Log Likelihood ≈ -16.37128
+- **Example 2:**  
+  - Given: 𝜇_Y = 5, 𝜎_Y² = 5 → Log Likelihood ≈ -29.85319
+- **Sample Estimates from Computations:**  
+  - Estimate 1: \( \hat{\mu}_Y = 0.3589 \), \( \hat{\sigma}_Y = 1.4528 \)  
+  - Estimate 2: \( \hat{\mu}_Y = 0.0227 \), \( \hat{\sigma}_Y = 0.7791 \)  
+  - Baseline: \( \mu_Y = 0 \), \( \sigma_Y^2 = 1 \)
+
+---
+
+## 6. The Power of Maximum Likelihood
+
+- **Flexibility in Loss Functions:**  
+  - Not restricted to the normal distribution—you can choose any likelihood (or corresponding loss function) that suits your data generation process.
+  
+- **Uncertainty Quantification:**  
+  - ML methods allow for richer outputs beyond point estimates, such as confidence intervals and uncertainty measures.
+
+---
+
+## 7. Properties of Maximum Likelihood Estimators (MLE)
+
+### 7.1. Functional Invariance
+
+- **Key Idea:**  
+  - If you have an estimate \(\hat{\theta}\) for a parameter \(\theta\), then for any function \(f(\cdot)\):
+    \[
+    \widehat{f(\theta)} = f(\hat{\theta})
+    \]
+  - The estimate of a function of the parameter is simply the function applied to the parameter estimate.
+
+### 7.2. Asymptotic Properties
+
+- **Asymptotically Unbiased:**  
+  - As the sample size increases, the estimator converges to the true parameter value.
+  
+- **Asymptotically Efficient:**  
+  - The estimator achieves the lowest possible variance (Cramer–Rao lower bound) in the limit of infinite data.
+  
+- **Asymptotically Normal:**  
+  - The distribution of the estimator approximates a normal distribution for large sample sizes.
+
+---
+
+## 8. Logistic Regression
+
+### 8.1. Why Not Use Linear Regression for Classification?
+
+- **Problem 1:**  
+  - Linear regression does not restrict outputs to the [0, 1] interval, which is necessary for probabilities.
+  
+- **Problem 2:**  
+  - The assumptions behind linear regression (e.g., normally distributed errors) do not hold for classification tasks.
+
+### 8.2. Introducing the Logistic Function
+
+- **Bounding Function:**  
+  - To limit predictions to a probability, use:
+    \[
+    f(z) = \frac{1}{1+e^{-z}}
+    \]
+  - **Graph Insight:**  
+    - For z-values roughly between -7 and 7, the output of f(z) will always lie between 0 and 1.
+
+---
+
+## 9. Logistic Regression Model
+
+### 9.1. Model Formulation
+
+- **Probability Interpretation:**  
+  - For a customer being “good” (or any binary outcome):
+    \[
+    P(\text{good} \mid \text{age, income, gender, …}) = \frac{1}{1+\exp\left(-(\beta_0+\beta_1\cdot\text{age}+\beta_2\cdot\text{income}+\beta_3\cdot\text{gender}+\dots)\right)}
+    \]
+  
+- **Log-Odds Formulation:**  
+  - Alternatively, express as:
+    \[
+    \ln\left[\frac{P(\text{good} \mid \dots)}{P(\text{bad} \mid \dots)}\right] = \beta_0+\beta_1\cdot\text{age}+\beta_2\cdot\text{income}+\beta_3\cdot\text{gender}+\dots
+    \]
+
+### 9.2. Application
+
+- **Model Estimation:**  
+  - Use historical data and maximum likelihood estimation to estimate the beta parameters.
+  
+- **Usage:**  
+  - Once estimated, the model can be used to score new data by providing the probability (or risk) of a customer being good or bad.
+
+---
+
+## 10. Odds Ratio in Logistic Regression
+
+### 10.1. Understanding the Odds and Logit
+
+- **Odds Definition:**  
+  - For an event A:
+    \[
+    \text{Odds}(A) = \frac{P(A)}{1-P(A)}
+    \]
+  
+- **Logit Transformation:**  
+  - Converts probability to log-odds:
+    \[
+    \text{logit}(p) = \ln\left[\frac{p}{1-p}\right] = \beta_0+\beta_1X_1+\dots+\beta_nX_n + e
+    \]
+
+### 10.2. Calculating the Odds Ratio
+
+- **General Definition:**  
+  - For two events (or conditions), A and B:
+    \[
+    \text{Odds Ratio (OR)} = \frac{\text{Odds}(A)}{\text{Odds}(B)}
+    \]
+  
+- **Interpreting Changes in Predictors:**  
+  - For a change in predictor \(X_1\):
+    \[
+    \text{OR} = \exp\left(\beta_1 \cdot (X_1^* - X_1)\right)
+    \]
+  - If \(X_1\) increases by 1 unit:
+    \[
+    \text{OR} = \exp(\beta_1)
+    \]
+  - **Exam Focus:**  
+    - Be sure to understand how to interpret \( \exp(\beta_1) \) as the multiplicative change in the odds for a one-unit increase in the predictor.
+
+### 10.3. Odds Ratio Examples
+
+- **Example – Age:**  
+  - Odds Ratio ≈ 1.945  
+  - **Interpretation:**  
+    - A one-year increase in age nearly doubles (1.945 times) the odds of defaulting, holding other variables constant.
+  
+- **Example – Income:**  
+  - Odds Ratio ≈ 0.358  
+  - **Interpretation:**  
+    - A $1000 increase in income reduces the odds of defaulting by nearly a factor of 3, holding other variables constant.
+
+---
+
+## 11. Maximum Likelihood for Logistic Regression
+
+### 11.1. Likelihood Function for Logistic Regression
+
+- **Formulation:**  
+  - For binary outcomes (Y = 0 or 1), the likelihood function is:
+    \[
+    \max \; \mathcal{L}(\beta \mid X) = \prod_{i=1}^{N} \left[p(x_i)\right]^{\mathbb{I}\{y_i=1\}} \left[1-p(x_i)\right]^{\mathbb{I}\{y_i=0\}}
+    \]
+  - **Where:**  
+    - \( n_1 \) is the number of positive cases, and \( N \) is the total number of cases.
+  
+- **Key Point:**  
+  - The beta parameters (coefficients) are estimated by maximizing this likelihood function.
+
+### 11.2. Assumptions
+
+- **Independence:**  
+  - The sample cases are assumed to be independent.
+  
+- **No Distributional Assumption on Errors:**  
+  - Unlike linear regression, logistic regression does not assume normally distributed errors.
+
+---
+
+## Summary & Exam-Focus Highlights
+
+- **Likelihood vs. Log Likelihood:**  
+  - Understand why taking the logarithm of the likelihood is beneficial (numerical stability, simplicity in differentiation).
+  
+- **Maximum Likelihood Estimation (MLE):**  
+  - Key steps include setting derivatives to zero and solving for parameter estimates.  
+  - Know the derivation for the mean in the normal distribution case.
+  
+- **Logistic Regression:**  
+  - Grasp the need to transform linear regression for classification using the logistic (sigmoid) function.
+  - Be comfortable with both the probability and log-odds (logit) formulations.
+  
+- **Odds Ratios:**  
+  - Critical for interpreting logistic regression outputs.  
+  - Emphasize that \( \exp(\beta) \) represents the multiplicative change in odds for a one-unit increase in the predictor.
+  
+- **Application of MLE in Logistic Regression:**  
+  - Understand how maximum likelihood is used to estimate the coefficients in a logistic regression model.
+  
+- **Properties of ML Estimators:**  
+  - Recall the asymptotic properties: unbiasedness, efficiency (reaching the Cramer–Rao bound), and normality.

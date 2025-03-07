@@ -1,0 +1,450 @@
+{
+    'question': """<b>What are the document’s key metadata details?</b><br><ul>
+    <li>Option A: Title: Uncertainty Measurement; Author: CRISTIÁN BRAVO; Contact: CBRAVORO@UWO.CA; Office: OFFICE 280</li>
+    <li>Option B: Title: Parameter Analysis; Author: John Doe; Contact: JOHN@EXAMPLE.COM; Office: 101</li>
+    <li>Option C: Title: Machine Learning Basics; Author: Jane Smith; Contact: JANE@EXAMPLE.COM; Office: 202</li>
+    <li>Option D: Title: Statistical Methods; Author: Alice Brown; Contact: ALICE@EXAMPLE.COM; Office: 303</li>
+    <li>Option E: Title: Deep Learning Advances; Author: Bob White; Contact: BOB@EXAMPLE.COM; Office: 404</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which topics are covered in the document?</b><br><ul>
+    <li>Option A: Parameter uncertainty, Confidence Intervals via the Central Limit Theorem, The Bootstrap, Prediction uncertainty</li>
+    <li>Option B: Neural networks, Reinforcement learning, Clustering, Feature selection</li>
+    <li>Option C: Decision trees, Random forests, SVMs, K-means</li>
+    <li>Option D: Time series analysis, ARIMA models, Seasonal adjustments, Trend analysis</li>
+    <li>Option E: Genetic algorithms, Evolutionary strategies, Swarm intelligence, Fuzzy systems</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which statement best defines parameter, statistic, and estimation?</b><br><ul>
+    <li>Option A: A parameter characterizes the population (e.g., mean or slope), a statistic is a summary computed from a dataset, and estimation uses a statistic to infer the parameter.</li>
+    <li>Option B: A parameter is a computed summary, a statistic is the true value, and estimation adjusts the data to match the parameter.</li>
+    <li>Option C: A parameter is derived from the sample, a statistic comes from theory, and estimation ignores variability.</li>
+    <li>Option D: A parameter and statistic are identical, and estimation is not needed when data is abundant.</li>
+    <li>Option E: A parameter is used for predictions, a statistic is used for classification, and estimation is used for clustering.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the correct association for 'Estimate', 'Estimator', and 'Estimand'?</b><br><ul>
+    <li>Option A: An estimate is the value obtained from a dataset, an estimator is the function used to compute it (e.g., “sum-and-divide by n”), and the estimand is the parameter of interest.</li>
+    <li>Option B: An estimate is a theoretical value, an estimator is the data sample, and the estimand is the computed statistic.</li>
+    <li>Option C: An estimate is a guess, an estimator is a probability, and the estimand is the error term.</li>
+    <li>Option D: An estimate is the true population value, an estimator is its confidence interval, and the estimand is the sample mean.</li>
+    <li>Option E: An estimate is a predicted outcome, an estimator is a machine learning model, and the estimand is the loss function.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How is the population mean defined and estimated when the distribution is unknown?</b><br><ul>
+    <li>Option A: The population mean is defined as μ = ∫ x·f(x) dx and estimated using the sample mean x̄ = (1/n) Σ xᵢ.</li>
+    <li>Option B: The population mean is defined as the median and estimated by the mode of the sample.</li>
+    <li>Option C: The population mean is determined by the maximum likelihood and estimated via the minimum value in the sample.</li>
+    <li>Option D: The population mean is irrelevant when f(x) is unknown, so only the range is used.</li>
+    <li>Option E: The population mean is defined as the sum of squares and estimated using the variance.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is a sampling distribution?</b><br><ul>
+    <li>Option A: It is the distribution of an estimator calculated over all possible samples from the population.</li>
+    <li>Option B: It is the distribution of the raw data in a single sample.</li>
+    <li>Option C: It is the theoretical distribution of the entire population.</li>
+    <li>Option D: It is the distribution of the errors in the model.</li>
+    <li>Option E: It is the distribution of residuals after fitting a model.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How can we assess the precision of an estimate?</b><br><ul>
+    <li>Option A: By estimating the sampling distribution of the estimator.</li>
+    <li>Option B: By computing only the sample mean.</li>
+    <li>Option C: By ignoring variability and using a fixed value.</li>
+    <li>Option D: By solely relying on the population parameter.</li>
+    <li>Option E: By comparing unrelated datasets.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>According to the Central Limit Theorem, for a large sample size n, the distribution of the sample mean is approximately:</b><br><ul>
+    <li>Option A: Normal with mean μ and standard error σ/√n.</li>
+    <li>Option B: Uniform across all values.</li>
+    <li>Option C: Exponential with rate parameter λ.</li>
+    <li>Option D: Binomial with parameters n and p.</li>
+    <li>Option E: Poisson with mean λ.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How is a confidence interval constructed using the Central Limit Theorem?</b><br><ul>
+    <li>Option A: CI = [x̄ − zα·(σ/√n), x̄ + zα·(σ/√n)].</li>
+    <li>Option B: CI = [x̄ − tα·σ, x̄ + tα·σ].</li>
+    <li>Option C: CI = [μ − zα·σ, μ + zα·σ].</li>
+    <li>Option D: CI = [median − zα·(σ/√n), median + zα·(σ/√n)].</li>
+    <li>Option E: CI = [x̄ − zα·(σ²/√n), x̄ + zα·(σ²/√n)].</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What does a 95% confidence interval imply?</b><br><ul>
+    <li>Option A: That in 95 out of 100 repeated experiments under identical conditions, the interval will contain the true parameter.</li>
+    <li>Option B: That there is a 95% chance the true parameter lies within the interval in a single experiment.</li>
+    <li>Option C: That 95% of the data points fall within the interval.</li>
+    <li>Option D: That the sample mean is 95% accurate.</li>
+    <li>Option E: That the true mean equals the sample mean 95% of the time.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>When is it appropriate to use the normal-based confidence interval method?</b><br><ul>
+    <li>Option A: When the measure is normal (e.g., mean, median) and variances or ranked measures (like ROC/AUC) are not being approximated.</li>
+    <li>Option B: Only for estimating variances.</li>
+    <li>Option C: For any statistic regardless of its distribution.</li>
+    <li>Option D: Exclusively for non-parametric data.</li>
+    <li>Option E: Only for binary outcomes.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the main idea behind the bootstrap method?</b><br><ul>
+    <li>Option A: To use the available sample data to generate many resamples (with replacement) in order to approximate the sampling distribution.</li>
+    <li>Option B: To artificially increase the sample size by adding noise.</li>
+    <li>Option C: To use cross-validation for assessing model performance.</li>
+    <li>Option D: To fit multiple models to the same fixed dataset.</li>
+    <li>Option E: To transform non-normal data into a normal distribution.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which sequence correctly outlines the bootstrap procedure?</b><br><ul>
+    <li>Option A: Draw bootstrap samples with replacement, compute the statistic for each, calculate the differences from the original estimate, and then form confidence intervals using the quantiles of these differences.</li>
+    <li>Option B: Split the data into train and test sets, compute performance measures, then average the results.</li>
+    <li>Option C: Randomly shuffle the data, compute moving averages, and estimate the variance.</li>
+    <li>Option D: Use theoretical formulas to compute standard errors without resampling.</li>
+    <li>Option E: Select the best model based solely on validation scores.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>In the bootstrap context, what does δ* represent and how is it used?</b><br><ul>
+    <li>Option A: δ* = θ̂* − θ, representing the bootstrap distribution whose percentiles are used to form confidence intervals.</li>
+    <li>Option B: δ* is the difference between two independent sample means.</li>
+    <li>Option C: δ* is simply the original sample variance.</li>
+    <li>Option D: δ* represents the error term in a regression model.</li>
+    <li>Option E: δ* is the probability density function of the observed data.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What are the key advantages and disadvantages of the bootstrap method?</b><br><ul>
+    <li>Option A: Advantages include its universality, applicability to any statistic, asymptotic correctness, and no need for distributional assumptions; disadvantages include extra programming effort, instability with small sample sizes, and high computational cost.</li>
+    <li>Option B: Advantages include simplicity and speed; disadvantages include its limited applicability to normal data only.</li>
+    <li>Option C: Advantages include exact estimation; disadvantages include the requirement for very large samples.</li>
+    <li>Option D: Advantages include minimal computational cost; disadvantages include excessive complexity in implementation.</li>
+    <li>Option E: Advantages include its exclusive use for performance measures; disadvantages include its inapplicability to parameter estimates.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How are confidence intervals for performance measures calculated using the bootstrap?</b><br><ul>
+    <li>Option A: By taking a trained model, resampling the test set with repetition, calculating the performance measure for each sample, and centering the confidence interval on the original test set’s estimate.</li>
+    <li>Option B: By using the training set exclusively to compute performance.</li>
+    <li>Option C: By averaging the performance across multiple models without resampling.</li>
+    <li>Option D: By applying the Central Limit Theorem directly to the performance measure.</li>
+    <li>Option E: By calculating the confidence interval without considering sample variability.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the recommended procedure for calculating confidence intervals for regression parameter estimates using bootstrap?</b><br><ul>
+    <li>Option A: Draw bootstrapped samples from the dataset, retrain the full pipeline (including splitting, normalization, training, and performance evaluation) on each sample, and compute the confidence intervals using the original train parameter estimates.</li>
+    <li>Option B: Use a single data split to compute the parameter estimates without resampling.</li>
+    <li>Option C: Apply the Central Limit Theorem directly to the regression coefficients without bootstrapping.</li>
+    <li>Option D: Rely solely on the test set for parameter estimation.</li>
+    <li>Option E: Compute confidence intervals from theoretical distributions without resampling the data.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How do bootstrap and cross-validation compare in practice?</b><br><ul>
+    <li>Option A: Bootstrap is generally more precise, but cross-validation is more robust when the number of cases is less than the number of variables (n &lt; p) or when computational resources are limited, with practices such as 10-by-10 or 100-by-10 cross-validation recommended.</li>
+    <li>Option B: Bootstrap always outperforms cross-validation in every scenario.</li>
+    <li>Option C: Cross-validation is universally more accurate than bootstrap.</li>
+    <li>Option D: Both methods yield identical results in all situations.</li>
+    <li>Option E: Bootstrap is used only for time-series data while cross-validation is for static datasets.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the key distinction between using bootstrap for measuring uncertainty versus estimating parameter values?</b><br><ul>
+    <li>Option A: Bootstrap is primarily used to measure uncertainty (i.e. to obtain confidence intervals); using it for point estimation can introduce bias due to repeated sampling of the same examples, and while methods like the 0.632+ bootstrap exist, they may be pessimistically biased.</li>
+    <li>Option B: Both approaches yield identical outcomes without any differences.</li>
+    <li>Option C: Bootstrap cannot be used for parameter estimation at all.</li>
+    <li>Option D: Using bootstrap always results in overestimation of parameters.</li>
+    <li>Option E: There is no conceptual difference between uncertainty measurement and point estimation.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How is prediction uncertainty assessed in the context of model parameter uncertainty?</b><br><ul>
+    <li>Option A: By analyzing how variations in parameter estimates (obtained, for example, via bootstrap resampling) affect the predictions, thereby generating prediction confidence intervals.</li>
+    <li>Option B: By considering only the training error without resampling.</li>
+    <li>Option C: By using the mean squared error as the sole metric.</li>
+    <li>Option D: By assuming the model predictions are perfectly accurate.</li>
+    <li>Option E: By ignoring the variability in parameter estimates altogether.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How can prediction uncertainty be modeled for a dataset with nonlinear dependencies?</b><br><ul>
+    <li>Option A: By defining multiple nonlinear basis functions (e.g., B-splines, polynomials, Gaussians, or Fourier bases) to create a design matrix and then using bootstrap methods to assess prediction uncertainty.</li>
+    <li>Option B: By simply linearizing the data without any transformation.</li>
+    <li>Option C: By using only the arithmetic mean as a predictor.</li>
+    <li>Option D: By assuming constant variance across all inputs.</li>
+    <li>Option E: By applying logistic regression regardless of the data structure.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What is the process for using bootstrap to assess prediction uncertainty?</b><br><ul>
+    <li>Option A: Generate bootstrap samples, compute a new parameter estimate for each sample, and use these estimates to generate new predictions that form the basis for constructing confidence intervals.</li>
+    <li>Option B: Use cross-validation without any resampling.</li>
+    <li>Option C: Apply a fixed model without updating parameter estimates.</li>
+    <li>Option D: Rely solely on the original training set without bootstrapping.</li>
+    <li>Option E: Compute a single prediction and arbitrarily add noise.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How are confidence intervals for predictions constructed in a bootstrap framework?</b><br><ul>
+    <li>Option A: For each input x, compute the 95% confidence interval from the distribution of bootstrap-generated predictions; in linear regression, these intervals can also be derived using the Central Limit Theorem.</li>
+    <li>Option B: By taking only the median prediction from the bootstrap samples.</li>
+    <li>Option C: By assuming that prediction error is zero.</li>
+    <li>Option D: By using a fixed confidence level without any resampling.</li>
+    <li>Option E: By averaging all bootstrap predictions without calculating any percentiles.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>What important clarification should be noted regarding prediction confidence intervals?</b><br><ul>
+    <li>Option A: They indicate that the true function f(x) is within the interval with 95% probability, but do not guarantee that a new observation will fall within this interval due to additional random variability (e.g., measurement noise).</li>
+    <li>Option B: They guarantee that every new observation falls within the interval.</li>
+    <li>Option C: They apply exclusively to the training set.</li>
+    <li>Option D: They only reflect uncertainty in parameter estimation, not in predictions.</li>
+    <li>Option E: They are irrelevant for assessing prediction accuracy.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>How is training data utilized in the context of parameter uncertainty?</b><br><ul>
+    <li>Option A: The training data, denoted as D = {(x₁, y₁), ...}, is used to compute model predictions (ŷ = f(x, θ)) and to estimate parameters (θ̂), which form the basis for assessing uncertainty.</li>
+    <li>Option B: Training data is used solely for testing purposes.</li>
+    <li>Option C: Training data is completely ignored in uncertainty estimation.</li>
+    <li>Option D: Only synthetic data is used to assess uncertainty.</li>
+    <li>Option E: Training data is used to compute confidence intervals without any model fitting.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Option A"
+},
+{
+    'question': """<b>Which of the following correctly describes how tabular data is stored in memory or disk?</b><br><ul>
+    <li>Option A: As it appears in a table.</li>
+    <li>Option B: As a linear flow of bits.</li>
+    <li>Option C: In nested arrays.</li>
+    <li>Option D: In a hierarchical structure.</li>
+    <li>Option E: In a random-access pattern.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>What are the two main data orientations used for storing data?</b><br><ul>
+    <li>Option A: Hierarchical and network storage.</li>
+    <li>Option B: Random and sequential storage.</li>
+    <li>Option C: Row data storage and columnar data storage.</li>
+    <li>Option D: Indexed and non-indexed storage.</li>
+    <li>Option E: In-memory and on-disk storage.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> C"
+},
+{
+    'question': """<b>Which of the following is an advantage of row storage?</b><br><ul>
+    <li>Option A: Enables fast aggregation across columns.</li>
+    <li>Option B: Ensures contiguous storage of row data, making deletion/insertion easy and random access efficient.</li>
+    <li>Option C: Allows for efficient SIMD operations.</li>
+    <li>Option D: Improves column modification speed.</li>
+    <li>Option E: Offers superior data compression.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>For which type of databases is row storage most suitable?</b><br><ul>
+    <li>Option A: Data science pipelines.</li>
+    <li>Option B: Operational databases.</li>
+    <li>Option C: Distributed computing frameworks.</li>
+    <li>Option D: Real-time analytics systems.</li>
+    <li>Option E: Graph databases.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>What is a major advantage of columnar data storage?</b><br><ul>
+    <li>Option A: Data is stored sequentially by row.</li>
+    <li>Option B: Optimizes aggregation and SIMD operations by storing data column-wise.</li>
+    <li>Option C: Simplifies row deletion and insertion.</li>
+    <li>Option D: Enhances random access for individual records.</li>
+    <li>Option E: Increases overall data redundancy.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>How does columnar data storage store data?</b><br><ul>
+    <li>Option A: Data is stored in rows.</li>
+    <li>Option B: Data is stored in random order.</li>
+    <li>Option C: Data is stored sequentially per column.</li>
+    <li>Option D: Data is stored as unstructured blobs.</li>
+    <li>Option E: Data is stored in a circular buffer.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> C"
+},
+{
+    'question': """<b>What benefit does compressing columnar data offer?</b><br><ul>
+    <li>Option A: It increases storage space usage.</li>
+    <li>Option B: It reduces data size and can improve processing speed significantly.</li>
+    <li>Option C: It complicates data retrieval.</li>
+    <li>Option D: It eliminates the need for memory management.</li>
+    <li>Option E: It slows down data access.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>Which file formats are commonly used for columnar data storage in software systems?</b><br><ul>
+    <li>Option A: CSV and JSON.</li>
+    <li>Option B: Apache Parquet and Apache Arrow.</li>
+    <li>Option C: XML and YAML.</li>
+    <li>Option D: TXT and DOC.</li>
+    <li>Option E: SQL and NoSQL.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>Which of the following software implementations use columnar data storage?</b><br><ul>
+    <li>Option A: DuckDB, Polars, and Apache Spark.</li>
+    <li>Option B: MySQL, PostgreSQL, and Oracle.</li>
+    <li>Option C: MongoDB, Cassandra, and CouchDB.</li>
+    <li>Option D: Redis, Memcached, and Riak.</li>
+    <li>Option E: Excel, Access, and LibreOffice.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> A"
+},
+{
+    'question': """<b>Why is Apache Spark mentioned in the context of data storage?</b><br><ul>
+    <li>Option A: It is a columnar file format.</li>
+    <li>Option B: It is used for cluster and distributed computing by taking computing to the data.</li>
+    <li>Option C: It is a row storage optimization tool.</li>
+    <li>Option D: It is a data compression library.</li>
+    <li>Option E: It is a spreadsheet software.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>What is a core issue with Pandas regarding data storage practices?</b><br><ul>
+    <li>Option A: It always uses row storage.</li>
+    <li>Option B: It only supports columnar storage.</li>
+    <li>Option C: It is inconsistent in its data storage practices.</li>
+    <li>Option D: It doesn't support data manipulation.</li>
+    <li>Option E: It uses outdated storage formats.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> C"
+},
+{
+    'question': """<b>Which type of operations benefit most from columnar data storage?</b><br><ul>
+    <li>Option A: Row deletion.</li>
+    <li>Option B: Aggregation and column calculations.</li>
+    <li>Option C: Random record updates.</li>
+    <li>Option D: Transaction processing.</li>
+    <li>Option E: Data replication.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>In what scenario is row data storage considered superior?</b><br><ul>
+    <li>Option A: For analytical data science pipelines.</li>
+    <li>Option B: For operational databases requiring random access and ease of data modification.</li>
+    <li>Option C: For heavy data aggregation.</li>
+    <li>Option D: For compressing data efficiently.</li>
+    <li>Option E: For column-based analytics.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>How is memory efficiency achieved in columnar storage when storing Boolean data?</b><br><ul>
+    <li>Option A: By storing each Boolean as one byte.</li>
+    <li>Option B: By using a bitmap to store Booleans, significantly reducing memory usage.</li>
+    <li>Option C: By converting Booleans to integers.</li>
+    <li>Option D: By storing Booleans as strings.</li>
+    <li>Option E: By ignoring Boolean columns.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>What determines the performance of software related to data storage?</b><br><ul>
+    <li>Option A: The size of the dataset.</li>
+    <li>Option B: The data orientation choice (row vs. columnar storage).</li>
+    <li>Option C: The color of the user interface.</li>
+    <li>Option D: The brand of hardware.</li>
+    <li>Option E: The software's licensing model.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>Which of the following summarizes the advantages of columnar data storage in data science pipelines?</b><br><ul>
+    <li>Option A: Easy row deletion and insertion.</li>
+    <li>Option B: Data is stored in rows for quick access.</li>
+    <li>Option C: Enhanced SIMD operations, efficient aggregation, and superior compression.</li>
+    <li>Option D: Increased memory usage and slower processing.</li>
+    <li>Option E: Limited to uncompressed data.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> C"
+},
+{
+    'question': """<b>What does Apache Arrow provide?</b><br><ul>
+    <li>Option A: A disk-based row storage format.</li>
+    <li>Option B: A language-agnostic framework for developing data analytics applications processing columnar data.</li>
+    <li>Option C: A database management system.</li>
+    <li>Option D: A visualization tool.</li>
+    <li>Option E: A scripting language for machine learning.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>What is Apache Parquet designed for?</b><br><ul>
+    <li>Option A: Storing data as plain text.</li>
+    <li>Option B: Column-oriented data storage with efficient compression and encoding.</li>
+    <li>Option C: Creating relational database tables.</li>
+    <li>Option D: Unstructured data storage.</li>
+    <li>Option E: Data visualization.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>Why is representing data in a linear memory model important?</b><br><ul>
+    <li>Option A: It simplifies human readability.</li>
+    <li>Option B: It aligns with the computer’s view of memory as a single linear flow of bits.</li>
+    <li>Option C: It requires more complex algorithms.</li>
+    <li>Option D: It reduces data redundancy.</li>
+    <li>Option E: It enhances graphical displays.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> B"
+},
+{
+    'question': """<b>Which of the following is NOT an advantage of row storage?</b><br><ul>
+    <li>Option A: Contiguous storage of row data.</li>
+    <li>Option B: Ease of deletion and insertion.</li>
+    <li>Option C: Efficient random access.</li>
+    <li>Option D: Enhanced SIMD and aggregation performance.</li>
+    <li>Option E: Quick retrieval of full row data.</li>
+</ul>""",
+    'answer': "<b>Answer:</b> D"
+}

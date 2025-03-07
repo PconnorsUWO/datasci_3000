@@ -1,0 +1,260 @@
+{
+    'question': """<b>What are the two main topics covered in this course?</b><br><ul>
+    <li>Likelihood Methods and Logistic Regression</li>
+    <li>Neural Networks and Decision Trees</li>
+    <li>Clustering and Dimensionality Reduction</li>
+    <li>Support Vector Machines and Ensemble Methods</li>
+    <li>Reinforcement Learning and Deep Learning</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Likelihood Methods and Logistic Regression"
+},
+{
+    'question': """<b>How is 'likelihood' defined in the context of this course?</b><br><ul>
+    <li>The probability of the parameters given the data</li>
+    <li>The probability of observing the data given the parameters</li>
+    <li>The sum of data probabilities</li>
+    <li>The ratio of data likelihoods</li>
+    <li>The derivative of the log probability</li>
+</ul>""",
+    'answer': "<b>Answer:</b> The probability of observing the data given the parameters"
+},
+{
+    'question': """<b>For independent and identically distributed (i.i.d.) data, how is the overall likelihood computed?</b><br><ul>
+    <li>As the sum of individual probabilities</li>
+    <li>As the product of individual probabilities</li>
+    <li>As the maximum of individual probabilities</li>
+    <li>As the average of individual probabilities</li>
+    <li>As the logarithm of individual probabilities</li>
+</ul>""",
+    'answer': "<b>Answer:</b> As the product of individual probabilities"
+},
+{
+    'question': """<b>What is the discrete likelihood equation as presented in the course material?</b><br><ul>
+    <li>ℒ(θ; y₁, ..., yₙ) = ∑ p_Y(θ; yᵢ)</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = ∏ p_Y(θ; yᵢ)</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = log ∏ p_Y(θ; yᵢ)</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = exp(∑ p_Y(θ; yᵢ))</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = ∏ log(p_Y(θ; yᵢ))</li>
+</ul>""",
+    'answer': "<b>Answer:</b> ℒ(θ; y₁, ..., yₙ) = ∏ p_Y(θ; yᵢ)"
+},
+{
+    'question': """<b>What is the continuous likelihood equation provided in the text?</b><br><ul>
+    <li>ℒ(θ; y₁, ..., yₙ) = ∏ f_Y(θ; yᵢ)</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = ∑ f_Y(θ; yᵢ)</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = ∏ log(f_Y(θ; yᵢ))</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = log(∑ f_Y(θ; yᵢ))</li>
+    <li>ℒ(θ; y₁, ..., yₙ) = ∏ f_Y(yᵢ; θ)</li>
+</ul>""",
+    'answer': "<b>Answer:</b> ℒ(θ; y₁, ..., yₙ) = ∏ f_Y(θ; yᵢ)"
+},
+{
+    'question': """<b>What is the likelihood value when μ<sub>Y</sub> = 0 and σ<sub>Y</sub><sup>2</sup> = 1, according to the example?</b><br><ul>
+    <li>1.083736e-13</li>
+    <li>7.763261e-08</li>
+    <li>-16.37128</li>
+    <li>-29.85319</li>
+    <li>0.3589</li>
+</ul>""",
+    'answer': "<b>Answer:</b> 7.763261e-08"
+},
+{
+    'question': """<b>Why do data scientists prefer working with the log likelihood instead of the likelihood?</b><br><ul>
+    <li>It converts sums into products</li>
+    <li>It increases the magnitude of the likelihood</li>
+    <li>It simplifies multiplication into addition</li>
+    <li>It eliminates the need for derivatives</li>
+    <li>It always produces positive values</li>
+</ul>""",
+    'answer': "<b>Answer:</b> It simplifies multiplication into addition"
+},
+{
+    'question': """<b>What is the discrete log likelihood equation provided in the course?</b><br><ul>
+    <li>ℓ(θ; y₁, ..., yₙ) = ∏ log(p_Y(θ; yᵢ))</li>
+    <li>ℓ(θ; y₁, ..., yₙ) = log(∏ p_Y(θ; yᵢ))</li>
+    <li>ℓ(θ; y₁, ..., yₙ) = ∑ log(p_Y(θ; yᵢ))</li>
+    <li>ℓ(θ; y₁, ..., yₙ) = ∑ p_Y(θ; yᵢ)</li>
+    <li>ℓ(θ; y₁, ..., yₙ) = log(∑ p_Y(θ; yᵢ))</li>
+</ul>""",
+    'answer': "<b>Answer:</b> ℓ(θ; y₁, ..., yₙ) = ∑ log(p_Y(θ; yᵢ))"
+},
+{
+    'question': """<b>What is the log likelihood value for μ<sub>Y</sub> = 5 and σ<sub>Y</sub><sup>2</sup> = 5, as given in the examples?</b><br><ul>
+    <li>-16.37128</li>
+    <li>1.083736e-13</li>
+    <li>-29.85319</li>
+    <li>7.763261e-08</li>
+    <li>0.0227</li>
+</ul>""",
+    'answer': "<b>Answer:</b> -29.85319"
+},
+{
+    'question': """<b>What are the three main steps in the Maximum Likelihood Principle?</b><br><ul>
+    <li>Select data, maximize likelihood, validate model</li>
+    <li>Identify a set of distributions, find the one that makes the data most likely, infer and predict</li>
+    <li>Compute derivatives, set to zero, solve equations</li>
+    <li>Choose a loss function, minimize error, regularize model</li>
+    <li>Estimate parameters, compute confidence intervals, test hypotheses</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Identify a set of distributions, find the one that makes the data most likely, infer and predict"
+},
+{
+    'question': """<b>What is the formula for the normal density function as provided?</b><br><ul>
+    <li>1/(√(2πσ<sub>Y</sub><sup>2</sup>)) · exp(−(y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>))</li>
+    <li>1/(2πσ<sub>Y</sub><sup>2</sup>) · exp((y − μ<sub>Y</sub>)²/(−2σ<sub>Y</sub><sup>2</sup>))</li>
+    <li>1/(2πσ<sub>Y</sub>) · exp(−(y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub>))</li>
+    <li>exp(−(y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>)) / (√(2π)σ<sub>Y</sub>)</li>
+    <li>1/(2σ<sub>Y</sub><sup>2</sup>π) · exp((y − μ<sub>Y</sub>)²/(−σ<sub>Y</sub><sup>2</sup>))</li>
+</ul>""",
+    'answer': "<b>Answer:</b> 1/(2πσ<sub>Y</sub><sup>2</sup>) · exp((y − μ<sub>Y</sub>)²/(−2σ<sub>Y</sub><sup>2</sup>))"
+},
+{
+    'question': """<b>How is the log of the normal density function expressed in the material?</b><br><ul>
+    <li>log(f<sub>Y</sub>(y)) = − log 2π − log σ<sub>Y</sub><sup>2</sup> − (y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>)</li>
+    <li>log(f<sub>Y</sub>(y)) = log 2π + log σ<sub>Y</sub><sup>2</sup> + (y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>)</li>
+    <li>log(f<sub>Y</sub>(y)) = −½ log(2πσ<sub>Y</sub><sup>2</sup>) − (y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>)</li>
+    <li>log(f<sub>Y</sub>(y)) = − log 2πσ<sub>Y</sub><sup>2</sup> − (y − μ<sub>Y</sub>)²</li>
+    <li>log(f<sub>Y</sub>(y)) = log(1/(2πσ<sub>Y</sub><sup>2</sup>)) + (y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>)</li>
+</ul>""",
+    'answer': "<b>Answer:</b> log(f<sub>Y</sub>(y)) = − log 2π − log σ<sub>Y</sub><sup>2</sup> − (y − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>)"
+},
+{
+    'question': """<b>How can the normal log likelihood be written in summation form?</b><br><ul>
+    <li>ℓ(μ<sub>Y</sub>, σ<sub>Y</sub><sup>2</sup>; y₁, …, yₙ) = ∑[ − log 2π − log σ<sub>Y</sub><sup>2</sup> − (yᵢ − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>) ]</li>
+    <li>ℓ(μ<sub>Y</sub>, σ<sub>Y</sub><sup>2</sup>; y₁, …, yₙ) = ∑[ log 2π + log σ<sub>Y</sub><sup>2</sup> + (yᵢ − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>) ]</li>
+    <li>ℓ(μ<sub>Y</sub>, σ<sub>Y</sub><sup>2</sup>; y₁, …, yₙ) = ∏[ − log 2π − log σ<sub>Y</sub><sup>2</sup> − (yᵢ − μ<sub>Y</sub>)²/(2σ<sub>Y</sub><sup>2</sup>) ]</li>
+    <li>ℓ(μ<sub>Y</sub>, σ<sub>Y</sub><sup>2</sup>; y₁, …, yₙ) = − log 2π − log σ<sub>Y</sub><sup>2</sup> − (1/(2σ<sub>Y</sub><sup>2</sup>))∑(yᵢ − μ<sub>Y</sub>)²</li>
+    <li>Both A and D are correct</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Both A and D are correct"
+},
+{
+    'question': """<b>In maximum likelihood estimation for the normal distribution, what value of μ<sub>Y</sub> maximizes the likelihood?</b><br><ul>
+    <li>μ<sub>Y</sub> = median(y)</li>
+    <li>μ<sub>Y</sub> = mode(y)</li>
+    <li>μ<sub>Y</sub> = (1/n) ∑ yᵢ</li>
+    <li>μ<sub>Y</sub> = maximum likelihood estimate of σ<sub>Y</sub></li>
+    <li>μ<sub>Y</sub> = 0 always</li>
+</ul>""",
+    'answer': "<b>Answer:</b> μ<sub>Y</sub> = (1/n) ∑ yᵢ"
+},
+{
+    'question': """<b>Which of the following is NOT an asymptotic property of maximum likelihood estimators?</b><br><ul>
+    <li>Asymptotically unbiased</li>
+    <li>Asymptotically efficient</li>
+    <li>Reaching the Cramer–Rao lower bound</li>
+    <li>Asymptotically normally distributed</li>
+    <li>Always unbiased in small samples</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Always unbiased in small samples"
+},
+{
+    'question': """<b>What is the function used to bound the output of a linear regression model in logistic regression?</b><br><ul>
+    <li>f(z) = 1 / (1 + e^(−z))</li>
+    <li>f(z) = e^(−z)</li>
+    <li>f(z) = log(1+e^z)</li>
+    <li>f(z) = 1 / (1 + z²)</li>
+    <li>f(z) = tanh(z)</li>
+</ul>""",
+    'answer': "<b>Answer:</b> f(z) = 1 / (1 + e^(−z))"
+},
+{
+    'question': """<b>How is the logistic regression model formulated in terms of probability?</b><br><ul>
+    <li>P(good|x) = β₀ + β₁·age + β₂·income + β₃·gender</li>
+    <li>P(good|x) = exp(β₀ + β₁·age + …)</li>
+    <li>P(good|x) = 1 / (1 + exp(−(β₀ + β₁·age + β₂·income + β₃·gender + …)))</li>
+    <li>P(good|x) = logit(β₀ + β₁·age + …)</li>
+    <li>P(good|x) = (β₀ + β₁·age + …)²</li>
+</ul>""",
+    'answer': "<b>Answer:</b> P(good|x) = 1 / (1 + exp(−(β₀ + β₁·age + β₂·income + β₃·gender + …)))"
+},
+{
+    'question': """<b>What is the log-odds (logit) formulation of the logistic regression model?</b><br><ul>
+    <li>logit(P) = ln(P)</li>
+    <li>logit(P) = ln[P/(1−P)] = β₀ + β₁·age + β₂·income + β₃·gender + …</li>
+    <li>logit(P) = P/(1−P)</li>
+    <li>logit(P) = exp(β₀ + β₁·age + …)</li>
+    <li>logit(P) = 1/(1+exp(−(β₀+…)))</li>
+</ul>""",
+    'answer': "<b>Answer:</b> logit(P) = ln[P/(1−P)] = β₀ + β₁·age + β₂·income + β₃·gender + …"
+},
+{
+    'question': """<b>How are odds ratios defined in the context of logistic regression?</b><br><ul>
+    <li>OR = P(A) − P(B)</li>
+    <li>OR = P(A) / P(B)</li>
+    <li>OR = [P(A)/(1−P(A))] / [P(B)/(1−P(B))]</li>
+    <li>OR = log(P(A))/(log(P(B)))</li>
+    <li>OR = P(B)/(1−P(B)) divided by P(A)/(1−P(A))</li>
+</ul>""",
+    'answer': "<b>Answer:</b> OR = [P(A)/(1−P(A))] / [P(B)/(1−P(B))]"
+},
+{
+    'question': """<b>For a change in predictor X₁ by one unit, how is the odds ratio calculated?</b><br><ul>
+    <li>OR = exp(b₁)</li>
+    <li>OR = b₁</li>
+    <li>OR = (exp(b₁))^1</li>
+    <li>Both A and C</li>
+    <li>OR = 1/b₁</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Both A and C"
+},
+{
+    'question': """<b>What do the odds ratio examples indicate about the effect of age and income on default odds?</b><br><ul>
+    <li>Age has no effect and income increases odds</li>
+    <li>A one-year increase in age nearly doubles odds of default and a $1000 increase in income nearly triples decrease in odds</li>
+    <li>Age decreases odds while income increases odds</li>
+    <li>Both age and income increase odds</li>
+    <li>Both age and income decrease odds</li>
+</ul>""",
+    'answer': "<b>Answer:</b> A one-year increase in age nearly doubles odds of default and a $1000 increase in income nearly triples decrease in odds"
+},
+{
+    'question': """<b>What is the maximum likelihood function used for estimating logistic regression parameters?</b><br><ul>
+    <li>max ℒ(β | X) = ∑ [ p(xᵢ) ]^(yᵢ) · [ (1 − p(xᵢ)) ]^(1−yᵢ)</li>
+    <li>max ℒ(β | X) = ∏ [ p(xᵢ) ]^(indicator{yᵢ=1}) · [ (1 − p(xᵢ)) ]^(indicator{yᵢ=0})</li>
+    <li>max ℒ(β | X) = ∏ [ log(p(xᵢ)) ]^(yᵢ)</li>
+    <li>max ℒ(β | X) = ∑ [ p(xᵢ) + (1 − p(xᵢ)) ]</li>
+    <li>max ℒ(β | X) = ∏ [ p(xᵢ) − (1 − p(xᵢ)) ]</li>
+</ul>""",
+    'answer': "<b>Answer:</b> max ℒ(β | X) = ∏ [ p(xᵢ) ]^(indicator{yᵢ=1}) · [ (1 − p(xᵢ)) ]^(indicator{yᵢ=0})"
+},
+{
+    'question': """<b>What key assumption is made when applying maximum likelihood estimation to logistic regression?</b><br><ul>
+    <li>Cases are correlated</li>
+    <li>Data errors are normally distributed</li>
+    <li>Sample cases are independent with no distributional assumptions imposed</li>
+    <li>Parameters are fixed</li>
+    <li>The outcome variable is continuous</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Sample cases are independent with no distributional assumptions imposed"
+},
+{
+    'question': """<b>What are the key components included in the customer data example for regression for classification?</b><br><ul>
+    <li>Customer name, Age, Income, Gender, and G/B</li>
+    <li>Customer name, Age, Income, and Email</li>
+    <li>Only Age and Income</li>
+    <li>Age, Income, and Occupation</li>
+    <li>Customer name, Age, and Zip code</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Customer name, Age, Income, Gender, and G/B"
+},
+{
+    'question': """<b>What does the property of functional invariance in maximum likelihood estimation state?</b><br><ul>
+    <li>The estimate of a function of a parameter equals the function of the estimate</li>
+    <li>The likelihood function is invariant under transformation</li>
+    <li>The log likelihood remains constant under scaling</li>
+    <li>The maximum likelihood estimator is always unbiased</li>
+    <li>The derivative of the likelihood is invariant</li>
+</ul>""",
+    'answer': "<b>Answer:</b> The estimate of a function of a parameter equals the function of the estimate"
+},
+{
+    'question': """<b>What advantage does the maximum likelihood approach provide when choosing loss functions?</b><br><ul>
+    <li>It restricts the choice to the normal distribution only</li>
+    <li>It allows picking any likelihood (or loss function) and provides uncertainty quantification</li>
+    <li>It simplifies to linear regression always</li>
+    <li>It guarantees perfect predictions</li>
+    <li>It removes the need for parameter estimation</li>
+</ul>""",
+    'answer': "<b>Answer:</b> It allows picking any likelihood (or loss function) and provides uncertainty quantification"
+}

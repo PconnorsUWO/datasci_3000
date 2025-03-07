@@ -1,0 +1,7 @@
+
+function evaluate(postion) -> evaluation:
+
+function ab(position) -> move  max(evaluat)
+    iterate all moves
+    logic
+function

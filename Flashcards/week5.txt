@@ -1,0 +1,340 @@
+{
+    'question': """<b>Which of the following correctly represents the course metadata?</b><br><ul>
+    <li>Title: Feature Selection and Regularization; Author: CRISTIÁN BRAVO; Contact: CBRAVORO@UW.O.CA; Office: 280</li>
+    <li>Title: Machine Learning Fundamentals; Author: John Doe; Contact: example@example.com; Office: 101</li>
+    <li>Title: Deep Learning and Neural Networks; Author: Jane Smith; Contact: jane@uni.edu; Office: 200</li>
+    <li>Title: Statistical Inference; Author: Alex Kim; Contact: akim@uw.edu; Office: 300</li>
+    <li>Title: Data Science Essentials; Author: Maria Garcia; Contact: maria@uw.edu; Office: 150</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Title: Feature Selection and Regularization; Author: CRISTIÁN BRAVO; Contact: CBRAVORO@UW.O.CA; Office: 280"
+},
+{
+    'question': """<b>Which topics are covered this week?</b><br><ul>
+    <li>The Feature Selection Problem, Sequential Feature Selection, Regularization</li>
+    <li>Feature Engineering, Model Evaluation, Hyperparameter Tuning</li>
+    <li>Clustering, Dimensionality Reduction, Neural Networks</li>
+    <li>Data Cleaning, Visualization, Sampling</li>
+    <li>Ensemble Methods, Bootstrapping, Cross-Validation</li>
+</ul>""",
+    'answer': "<b>Answer:</b> The Feature Selection Problem, Sequential Feature Selection, Regularization"
+},
+{
+    'question': """<b>Why might you want to perform feature selection in a regression model?</b><br><ul>
+    <li>To remove irrelevant features and reduce unnecessary model complexity</li>
+    <li>To increase the number of predictors in the model</li>
+    <li>To ensure all features are perfectly correlated with the response</li>
+    <li>To decrease model bias by adding more noise</li>
+    <li>To overfit the model to the training data</li>
+</ul>""",
+    'answer': "<b>Answer:</b> To remove irrelevant features and reduce unnecessary model complexity"
+},
+{
+    'question': """<b>Which features are considered relevant for prediction?</b><br><ul>
+    <li>Features that are statistically associated with the response and improve model performance</li>
+    <li>Features that are redundant and highly correlated</li>
+    <li>Features that unnecessarily increase model complexity</li>
+    <li>Features chosen at random without analysis</li>
+    <li>Features measured with high error rates</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Features that are statistically associated with the response and improve model performance"
+},
+{
+    'question': """<b>In the context of a housing application, what does sparsity refer to?</b><br><ul>
+    <li>The presence of many potential features, such as appliance details and property characteristics</li>
+    <li>A limited number of houses in the dataset</li>
+    <li>A uniform distribution of property prices</li>
+    <li>An absence of extraneous variables</li>
+    <li>A scenario with only one feature available</li>
+</ul>""",
+    'answer': "<b>Answer:</b> The presence of many potential features, such as appliance details and property characteristics"
+},
+{
+    'question': """<b>Which of the following is NOT one of the three approaches to feature selection described?</b><br><ul>
+    <li>Cross-Validation</li>
+    <li>Subset Selection</li>
+    <li>Shrinkage (Regularization)</li>
+    <li>Dimension Reduction</li>
+    <li>None of the above</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Cross-Validation"
+},
+{
+    'question': """<b>Which approach involves identifying a subset of the predictors believed to be related to the response?</b><br><ul>
+    <li>Subset Selection</li>
+    <li>Shrinkage (Regularization)</li>
+    <li>Dimension Reduction</li>
+    <li>Cross-Validation</li>
+    <li>Ensemble Methods</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Subset Selection"
+},
+{
+    'question': """<b>Which approach involves fitting a model using all predictors but shrinking coefficient estimates towards zero?</b><br><ul>
+    <li>Shrinkage (Regularization)</li>
+    <li>Subset Selection</li>
+    <li>Dimension Reduction</li>
+    <li>Bagging</li>
+    <li>Boosting</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Shrinkage (Regularization)"
+},
+{
+    'question': """<b>Which approach involves projecting the predictors into a lower-dimensional subspace?</b><br><ul>
+    <li>Dimension Reduction</li>
+    <li>Subset Selection</li>
+    <li>Shrinkage (Regularization)</li>
+    <li>Feature Engineering</li>
+    <li>Data Augmentation</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Dimension Reduction"
+},
+{
+    'question': """<b>What is the primary objective of the feature selection process?</b><br><ul>
+    <li>To find the best number of features for the model</li>
+    <li>To include all possible features in the model</li>
+    <li>To increase model complexity unnecessarily</li>
+    <li>To minimize computational cost by selecting zero features</li>
+    <li>To maximize overfitting</li>
+</ul>""",
+    'answer': "<b>Answer:</b> To find the best number of features for the model"
+},
+{
+    'question': """<b>What is a major drawback of using exhaustive search for best subset selection?</b><br><ul>
+    <li>The number of models grows approximately as 2^V, making it computationally infeasible for large V</li>
+    <li>It always finds the optimal model with no drawbacks</li>
+    <li>It only works for linear models</li>
+    <li>It ignores the need for cross-validation</li>
+    <li>It always selects too few features</li>
+</ul>""",
+    'answer': "<b>Answer:</b> The number of models grows approximately as 2^V, making it computationally infeasible for large V"
+},
+{
+    'question': """<b>What is a limitation of sequential selection methods compared to exhaustive search?</b><br><ul>
+    <li>They do not guarantee convergence to the optimal model</li>
+    <li>They evaluate all possible models</li>
+    <li>They are computationally more expensive</li>
+    <li>They require significantly more memory</li>
+    <li>They eliminate the need for cross-validation</li>
+</ul>""",
+    'answer': "<b>Answer:</b> They do not guarantee convergence to the optimal model"
+},
+{
+    'question': """<b>How does backward selection differ from forward selection?</b><br><ul>
+    <li>Backward selection starts with all variables and removes one at each step, while forward selection starts with no variables and adds one at a time</li>
+    <li>Backward selection adds variables, whereas forward selection removes them</li>
+    <li>Both methods start with no variables</li>
+    <li>Both methods start with all variables</li>
+    <li>There is no difference between them</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Backward selection starts with all variables and removes one at each step, while forward selection starts with no variables and adds one at a time"
+},
+{
+    'question': """<b>What is the key step in forward selection after evaluating the loss for each candidate feature?</b><br><ul>
+    <li>Select the feature that results in the lowest loss</li>
+    <li>Remove the feature with the highest loss</li>
+    <li>Randomly choose a feature</li>
+    <li>Select all features simultaneously</li>
+    <li>Terminate the algorithm immediately</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Select the feature that results in the lowest loss"
+},
+{
+    'question': """<b>When does forward selection terminate?</b><br><ul>
+    <li>When adding a new feature does not improve (or worsens) the loss</li>
+    <li>When all features have been added regardless of the loss</li>
+    <li>When the loss continuously decreases</li>
+    <li>When the dataset runs out of observations</li>
+    <li>When cross-validation error is no longer computed</li>
+</ul>""",
+    'answer': "<b>Answer:</b> When adding a new feature does not improve (or worsens) the loss"
+},
+{
+    'question': """<b>How does the model count compare between exhaustive search and sequential selection for V = 30?</b><br><ul>
+    <li>Exhaustive search requires evaluating roughly 1,073,741,824 models, whereas sequential selection evaluates around 466 models</li>
+    <li>Both methods evaluate the same number of models</li>
+    <li>Sequential selection evaluates more models than exhaustive search</li>
+    <li>Exhaustive search requires only 30 models</li>
+    <li>Sequential selection requires over a billion models</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Exhaustive search requires evaluating roughly 1,073,741,824 models, whereas sequential selection evaluates around 466 models"
+},
+{
+    'question': """<b>What is recommended when evaluating loss during feature selection?</b><br><ul>
+    <li>Use cross-validated error and consider the confidence interval</li>
+    <li>Rely solely on training error</li>
+    <li>Ignore the confidence interval</li>
+    <li>Evaluate loss without any form of validation</li>
+    <li>Select features based on intuition alone</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Use cross-validated error and consider the confidence interval"
+},
+{
+    'question': """<b>What does the bias-variance trade-off refer to in modeling?</b><br><ul>
+    <li>Balancing the error from model bias (systematic error) and variance (sensitivity to fluctuations)</li>
+    <li>Maximizing both bias and variance simultaneously</li>
+    <li>Eliminating both bias and variance completely</li>
+    <li>Focusing solely on minimizing bias while ignoring variance</li>
+    <li>Only considering variance and dismissing bias</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Balancing the error from model bias (systematic error) and variance (sensitivity to fluctuations)"
+},
+{
+    'question': """<b>What is the main purpose of regularization in linear models?</b><br><ul>
+    <li>To penalize excessive use of variables by shrinking coefficient estimates, thereby reducing variance</li>
+    <li>To increase the magnitude of coefficient estimates</li>
+    <li>To add more variables to the model without restriction</li>
+    <li>To overfit the model to achieve lower training error</li>
+    <li>To eliminate the need for model validation</li>
+</ul>""",
+    'answer': "<b>Answer:</b> To penalize excessive use of variables by shrinking coefficient estimates, thereby reducing variance"
+},
+{
+    'question': """<b>Which regularization techniques are commonly used in feature selection?</b><br><ul>
+    <li>Ridge Regression, Lasso Regression, and Elastic Net</li>
+    <li>Decision Trees and Random Forests</li>
+    <li>K-Means Clustering and Principal Component Analysis</li>
+    <li>Naive Bayes and Support Vector Machines</li>
+    <li>Gradient Boosting and AdaBoost</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Ridge Regression, Lasso Regression, and Elastic Net"
+},
+{
+    'question': """<b>In the regularization loss function, what role does the hyperparameter λ play?</b><br><ul>
+    <li>It balances the trade-off between bias and variance by controlling the penalty strength</li>
+    <li>It only affects the model's bias</li>
+    <li>It solely influences the model's variance</li>
+    <li>It is an arbitrary constant with no real effect</li>
+    <li>It determines the number of features to include</li>
+</ul>""",
+    'answer': "<b>Answer:</b> It balances the trade-off between bias and variance by controlling the penalty strength"
+},
+{
+    'question': """<b>What is the formula for Ridge Regression?</b><br><ul>
+    <li>L<sub>ridge</sub> = L<sub>bias</sub> + λ Σ (β<sub>k</sub><sup>2</sup>)</li>
+    <li>L<sub>ridge</sub> = L<sub>bias</sub> + λ Σ |β<sub>k</sub>|</li>
+    <li>L<sub>ridge</sub> = L<sub>bias</sub> - λ Σ (β<sub>k</sub><sup>2</sup>)</li>
+    <li>L<sub>ridge</sub> = L<sub>bias</sub> * λ Σ (β<sub>k</sub><sup>2</sup>)</li>
+    <li>L<sub>ridge</sub> = L<sub>bias</sub> / (λ Σ (β<sub>k</sub><sup>2</sup>))</li>
+</ul>""",
+    'answer': "<b>Answer:</b> L<sub>ridge</sub> = L<sub>bias</sub> + λ Σ (β<sub>k</sub><sup>2</sup>)"
+},
+{
+    'question': """<b>How can Ridge Regression be alternatively formulated as a constrained problem?</b><br><ul>
+    <li>Minimize L<sub>bias</sub> subject to Σ (β<sub>k</sub><sup>2</sup>) ≤ s</li>
+    <li>Minimize L<sub>bias</sub> subject to Σ |β<sub>k</sub>| ≤ s</li>
+    <li>Maximize L<sub>bias</sub> subject to Σ (β<sub>k</sub><sup>2</sup>) ≤ s</li>
+    <li>Minimize L<sub>bias</sub> without any constraints</li>
+    <li>Maximize the sum of squared coefficients</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Minimize L<sub>bias</sub> subject to Σ (β<sub>k</sub><sup>2</sup>) ≤ s"
+},
+{
+    'question': """<b>In the constrained formulation of Ridge Regression, where is the optimal solution found?</b><br><ul>
+    <li>At the point where the contours of the loss function touch the constraint region</li>
+    <li>At the center of the constraint region</li>
+    <li>At the maximum of the loss function</li>
+    <li>At a random point within the constraint region</li>
+    <li>At the boundary of the parameter space unrelated to the constraint</li>
+</ul>""",
+    'answer': "<b>Answer:</b> At the point where the contours of the loss function touch the constraint region"
+},
+{
+    'question': """<b>What is a key limitation of Ridge Regression in terms of variable selection?</b><br><ul>
+    <li>It rarely shrinks coefficients exactly to zero, making it less effective for variable selection</li>
+    <li>It completely eliminates variables from the model</li>
+    <li>It always results in an overfitted model</li>
+    <li>It does not reduce model variance</li>
+    <li>It increases the number of predictors unnecessarily</li>
+</ul>""",
+    'answer': "<b>Answer:</b> It rarely shrinks coefficients exactly to zero, making it less effective for variable selection"
+},
+{
+    'question': """<b>Why is standardization of variables important before applying Ridge Regression?</b><br><ul>
+    <li>To ensure that all variables are on the same scale for effective penalization</li>
+    <li>To increase the magnitude of coefficient estimates</li>
+    <li>To remove the need for any regularization</li>
+    <li>To introduce bias deliberately into the model</li>
+    <li>To reduce the overall sample size</li>
+</ul>""",
+    'answer': "<b>Answer:</b> To ensure that all variables are on the same scale for effective penalization"
+},
+{
+    'question': """<b>What is the key difference between LASSO and Ridge Regression regarding coefficient behavior?</b><br><ul>
+    <li>LASSO uses an L1 penalty that can shrink coefficients to exactly zero</li>
+    <li>LASSO uses an L2 penalty similar to Ridge Regression</li>
+    <li>LASSO increases the magnitude of coefficients</li>
+    <li>LASSO does not perform any variable selection</li>
+    <li>LASSO always results in dense models without sparsity</li>
+</ul>""",
+    'answer': "<b>Answer:</b> LASSO uses an L1 penalty that can shrink coefficients to exactly zero"
+},
+{
+    'question': """<b>What is a challenge associated with LASSO Regression?</b><br><ul>
+    <li>It is more sensitive to variable scaling and can be difficult to optimize</li>
+    <li>It is insensitive to how variables are scaled</li>
+    <li>It always produces the same solution as Ridge Regression</li>
+    <li>It is computationally trivial and requires no tuning</li>
+    <li>It does not require cross-validation for parameter tuning</li>
+</ul>""",
+    'answer': "<b>Answer:</b> It is more sensitive to variable scaling and can be difficult to optimize"
+},
+{
+    'question': """<b>How can LASSO Regression be formulated as a constrained problem?</b><br><ul>
+    <li>Minimize L<sub>bias</sub> subject to Σ |β<sub>k</sub>| ≤ s</li>
+    <li>Minimize L<sub>bias</sub> subject to Σ (β<sub>k</sub><sup>2</sup>) ≤ s</li>
+    <li>Maximize L<sub>bias</sub> subject to Σ |β<sub>k</sub>| ≤ s</li>
+    <li>Minimize L<sub>bias</sub> without any constraints</li>
+    <li>Maximize the absolute sum of the coefficients</li>
+</ul>""",
+    'answer': "<b>Answer:</b> Minimize L<sub>bias</sub> subject to Σ |β<sub>k</sub>| ≤ s"
+},
+{
+    'question': """<b>Which method is more suitable when there are only a small number of significant predictors?</b><br><ul>
+    <li>LASSO</li>
+    <li>Ridge Regression</li>
+    <li>Elastic Net</li>
+    <li>Best Subset Selection</li>
+    <li>Sequential Selection</li>
+</ul>""",
+    'answer': "<b>Answer:</b> LASSO"
+},
+{
+    'question': """<b>When does Ridge Regression have an advantage over Least Squares?</b><br><ul>
+    <li>When Least Squares estimates have high variance</li>
+    <li>When Least Squares estimates have low variance</li>
+    <li>When the model bias is negligible</li>
+    <li>When the dataset is extremely small</li>
+    <li>When there are no correlations among variables</li>
+</ul>""",
+    'answer': "<b>Answer:</b> When Least Squares estimates have high variance"
+},
+{
+    'question': """<b>What is the role of the parameter α in Elastic Net?</b><br><ul>
+    <li>It balances the contributions of the LASSO (L1) and Ridge (L2) penalties</li>
+    <li>It determines the overall strength of the regularization</li>
+    <li>It only affects the Ridge component of the penalty</li>
+    <li>It only influences the LASSO component of the penalty</li>
+    <li>It scales the response variable directly</li>
+</ul>""",
+    'answer': "<b>Answer:</b> It balances the contributions of the LASSO (L1) and Ridge (L2) penalties"
+},
+{
+    'question': """<b>When might a lower α be preferred in Elastic Net?</b><br><ul>
+    <li>In highly correlated problems, to favor more weight on the Ridge penalty</li>
+    <li>When the goal is to use pure LASSO regularization</li>
+    <li>When the variables are not normalized properly</li>
+    <li>When there is no need for variable selection</li>
+    <li>When the sample size is extremely large</li>
+</ul>""",
+    'answer': "<b>Answer:</b> In highly correlated problems, to favor more weight on the Ridge penalty"
+},
+{
+    'question': """<b>What is the overall benefit of applying regularization techniques in linear models?</b><br><ul>
+    <li>They reduce variance by introducing a small amount of bias, leading to a better bias-variance trade-off</li>
+    <li>They completely eliminate bias from the model</li>
+    <li>They significantly increase model complexity</li>
+    <li>They remove the necessity for any form of feature selection</li>
+    <li>They guarantee zero training error regardless of the data</li>
+</ul>""",
+    'answer': "<b>Answer:</b> They reduce variance by introducing a small amount of bias, leading to a better bias-variance trade-off"
+}
